@@ -27,3 +27,18 @@
 12	basic_s1_handover_SUITE	kodos	0	0	1	No	http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.kodos@seliltedes09.lmera.ericsson.se.2013-10-02_22.08.31/index.html
 13	s1_handover_error_case_SUITE	kodos	22	0	0	Yes	http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.kodos@seliltedes09.lmera.ericsson.se.2013-10-02_19.27.36/index.html
 14	s1_handover_packet_forwarding_SUITE	kodos	22	0	0	Yes	http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.kodos@seliltedes09.lmera.ericsson.se.2013-10-02_22.10.16/index.html
+
+
+There is total 29 Test suites running on nodes: [flanders, kodos, homer]
+
+The Total passed rate is 0.0% 
+flanders : 0 Passed over total 1 Test Case.0.0%
+kodos : 10 Passed over total 14 Test Case.71.42857142857143%
+homer : 7 Passed over total 14 Test Case.50.0%
+
+There is total 29 Test suites running on nodes: [flanders, kodos, homer]
+
+The Total passed rate is 175.86206896551724% 
+flanders : 0 Passed over total 1 Test Case.0.0%
+kodos : 10 Passed over total 14 Test Case.71.42857142857143%
+homer : 7 Passed over total 14 Test Case.50.0%

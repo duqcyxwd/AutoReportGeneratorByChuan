@@ -2,7 +2,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.jsoup.*;
 
 import java.io.*;
 import java.text.Collator;
@@ -27,6 +26,7 @@ public class HtmlExtract {
 	private ArrayList<OneTestReport> reportList;
 	private String link_base;
 	private Data data;
+	private DataAnalysis da; 
 
 	public HtmlExtract(Data d) {
 		reportList = new ArrayList<OneTestReport>();
@@ -169,7 +169,7 @@ public class HtmlExtract {
 	}
 	
 	public String summaryReport(){
-		DataAnalysis da = new DataAnalysis(reportList);
+		da = new DataAnalysis(reportList);
 		return da.reportSummary();
 	}
 	
@@ -188,6 +188,9 @@ public class HtmlExtract {
 			FileWriter fw = new FileWriter(file.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write(content);
+			if (data.getIsIncludeReportSummary()){
+				bw.write("\n\n" + da.reportSummary());
+			}
 			bw.close();
  
 			System.out.println("\nReport Done\nResult Can be find at " + file.getPath());

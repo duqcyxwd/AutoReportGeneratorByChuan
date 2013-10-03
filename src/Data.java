@@ -19,6 +19,8 @@ public class Data {
 	
 	private  Boolean isExclusiveUnnecessarySuite;
 	private  Boolean isOutPutWithReadableFormat;
+	
+	private Boolean isIncludeReportSummary;
 //	private static Object[][] data;
 	
 	private String[] signums;
@@ -39,6 +41,7 @@ public class Data {
 			isExclusiveUnnecessarySuite = prop.getProperty("isExclusiveUnnecessarySuite").matches("true");
 			isOutPutWithReadableFormat = prop.getProperty("isOutPutWithReadableFormat").matches("true");
 
+			isIncludeReportSummary = prop.getProperty("isIncludeReportSummary").matches("true");
 			
 			signums = prop.getProperty("signums").trim().split(",");
 
@@ -135,5 +138,19 @@ public class Data {
 
 	public char[] getSortOrder() {
 		return sortOrder;
+	}
+
+
+
+
+	public Boolean getIsIncludeReportSummary() {
+		return isIncludeReportSummary;
+	}
+
+
+
+
+	public void setIsIncludeReportSummary(Boolean isIncludeReportSummary) {
+		this.isIncludeReportSummary = isIncludeReportSummary;
 	}
 }

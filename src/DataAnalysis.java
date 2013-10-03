@@ -7,13 +7,12 @@ public class DataAnalysis {
 
 	private ArrayList<OneTestReport> reportList;
 	private HashSet<String> nodeNameSet;
-	private Integer totalTest, totalPassed;
+	private Integer totalPassed;
 	private String reportSummary;
 	
 	public DataAnalysis(ArrayList<OneTestReport> reportList) {
 		this.reportList = reportList;
 		nodeNameSet = new HashSet<String>();
-		totalTest = reportList.size();
 		totalPassed = 0;
 		reportSummary = new String();
 
@@ -21,7 +20,7 @@ public class DataAnalysis {
 	
 	public String reportSummary(){	
 		getNodesName();
-		
+		int totalTest = reportList.size();
 		
 		reportSummary += "\nThere is total " + totalTest + " Test suites running on nodes: " + nodeNameSet.toString() + "\n\n";
 		
@@ -36,7 +35,7 @@ public class DataAnalysis {
 	}
 	
 	public void getNodesName(){
-		for (int i = 0; i < totalTest; i ++){
+		for (int i = 0; i < reportList.size(); i ++){
 			nodeNameSet.add(reportList.get(i).getNodeName());
 		}
 	}

@@ -18,7 +18,6 @@ public class LegacyDataCompare {
 		{14, "s1_handover_packet_forwarding_SUITE", 22, 0, 0}
     };
 	private static int length = data.length;
-	private static int width = data[0].length;
 	public LegacyDataCompare() {	
 	}
 	

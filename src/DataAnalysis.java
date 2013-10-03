@@ -20,16 +20,20 @@ public class DataAnalysis {
 	
 	public String reportSummary(){	
 		getNodesName();
+		getTotalPassed();
 		int totalTest = reportList.size();
 		
 		reportSummary += "\nThere is total " + totalTest + " Test suites running on nodes: " + nodeNameSet.toString() + "\n\n";
 		
-		reportSummary += "The Total passed rate is " + 100.0*totalPassed/totalTest + "% \n";
+		double passedRate = 100.0*totalPassed/totalTest;
+		reportSummary += "The Total passed rate is " + String.format("%.1f", passedRate) + "% \n";
 		
 		Iterator<String> i = nodeNameSet.iterator();
 		while (i.hasNext()) {
 			getSusRate(i.next());
 		}
+		
+//		String.format("%-30s %4d %-45s %-12s %3d %3d %3d %9s  %7s  %3s", date, testNumber, testName, nodeName, suscess, fails, skips, isMatchwithLegacy, testerName,reportLink);
 		
 		return reportSummary;
 	}
@@ -39,6 +43,16 @@ public class DataAnalysis {
 			nodeNameSet.add(reportList.get(i).getNodeName());
 		}
 	}
+	
+	public void getTotalPassed(){
+		totalPassed = 0;
+		for (OneTestReport tr: reportList) {
+			if (tr.getIsMatchwithLegacy().equals("Yes")){
+				totalPassed ++;
+			}
+		}	
+	}
+	
 	
 	public void getSusRate(String nodeName){
 		ArrayList<OneTestReport> list = new ArrayList<OneTestReport>();
@@ -53,13 +67,11 @@ public class DataAnalysis {
 					
 			}
 			
-			if (tr.getIsMatchwithLegacy().equals("Yes")){
-				totalPassed ++;
-			}
+			
 		}	
 		
-		reportSummary += (nodeName + " : " + numMatchWithLegacy + " Passed over total " + totalTestNumerForNode + " Test Case." + 100.0*numMatchWithLegacy/totalTestNumerForNode + "%\n");
-
+		// reportSummary += (nodeName + " : " + numMatchWithLegacy + " Passed over total " + totalTestNumerForNode + " Test Case." + String.format("%.1f", 100.0*numMatchWithLegacy/totalTestNumerForNode) + "%\n");
+		reportSummary += String.format("%-8s%s%s%4s%2s%s%5.1f%s", nodeName, " : ", numMatchWithLegacy, " Passed over total ", totalTestNumerForNode, " Test Case.", 100.0*numMatchWithLegacy/totalTestNumerForNode, "%\n");
 	}
 
 }

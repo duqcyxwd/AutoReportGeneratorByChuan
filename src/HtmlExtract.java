@@ -169,7 +169,7 @@ public class HtmlExtract {
 	}
 	
 	public String summaryReport(){
-		da = new DataAnalysis(reportList);
+		da = new DataAnalysis(reportList, data);
 		return da.reportSummary();
 	}
 	

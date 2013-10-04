@@ -1,7 +1,7 @@
 
 public class LegacyDataCompare {
 
-	private static Object[][] data = {
+	public static Object[][] data = {
 		{1, "inter_freq_load_balance_SUITE", 60, 0, 0},
 		{2, "basic_intra_eNB_handover_SUITE", 15, 2, 0},
 		{3, "basic_x2_handover_SUITE", 1, 1, 0},

@@ -1,9 +1,14 @@
 Thu Oct 03 22:26:07 EDT 2013      8 interfreq_ho_SUITE                            herbert        8  13   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.herbert@seliltedes05.lmera.ericsson.se.2013-10-03_22.26.07/index.html
 Thu Oct 03 20:13:26 EDT 2013      8 interfreq_ho_SUITE                            herbert        8  13   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.herbert@seliltedes05.lmera.ericsson.se.2013-10-03_20.13.26/index.html
+Thu Oct 03 23:02:18 EDT 2013      9 rrc_conn_reestablishment_SUITE                herbert        0   0   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.herbert@seliltedes05.lmera.ericsson.se.2013-10-03_23.02.18/index.html
 Thu Oct 03 20:49:52 EDT 2013      9 rrc_conn_reestablishment_SUITE                herbert        0  28   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.herbert@seliltedes05.lmera.ericsson.se.2013-10-03_20.49.52/index.html
 Thu Oct 03 00:07:47 EDT 2013     10 multi_target_rrc_conn_reestablishment_SUITE   homer         35   3  65        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.homer@seliltedes08.lmera.ericsson.se.2013-10-03_00.07.47/index.html
 Thu Oct 03 00:21:19 EDT 2013     12 basic_s1_handover_SUITE                       homer          0   0   1        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.homer@seliltedes08.lmera.ericsson.se.2013-10-03_00.21.19/index.html
 Thu Oct 03 00:22:59 EDT 2013     14 s1_handover_packet_forwarding_SUITE           homer         22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.homer@seliltedes08.lmera.ericsson.se.2013-10-03_00.22.59/index.html
+Thu Oct 03 23:52:23 EDT 2013      8 interfreq_ho_SUITE                            lisa          21   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-03_23.52.23/index.html
+Thu Oct 03 23:58:09 EDT 2013      9 rrc_conn_reestablishment_SUITE                lisa          26   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-03_23.58.09/index.html
+Thu Oct 03 23:52:43 EDT 2013      8 interfreq_ho_SUITE                            lois          21   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-03_23.52.43/index.html
+Thu Oct 03 23:58:25 EDT 2013      9 rrc_conn_reestablishment_SUITE                lois          26   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-03_23.58.25/index.html
 Thu Oct 03 20:36:10 EDT 2013      1 inter_freq_load_balance_SUITE                 troy           5   1  54        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_20.36.10/index.html
 Thu Oct 03 20:56:18 EDT 2013      2 basic_intra_eNB_handover_SUITE                troy          15   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_20.56.18/index.html
 Thu Oct 03 21:02:32 EDT 2013      3 basic_x2_handover_SUITE                       troy           1   1  62        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_21.02.32/index.html
@@ -20,16 +25,11 @@ Thu Oct 03 20:28:21 EDT 2013     13 s1_handover_error_case_SUITE                
 Thu Oct 03 22:31:43 EDT 2013     14 s1_handover_packet_forwarding_SUITE           troy          22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_22.31.43/index.html
 
 
-There is total 20 Test suites running on nodes: [troy, homer, herbert]
+There is total 25 Test suites running on nodes: [lois, troy, homer, herbert, lisa]
 
-The Total passed rate is 50.0% 
+The Total passed rate is 56.0% 
+lois     : 2 Passed over total  2 Test Case.100.0%
 troy     : 9 Passed over total 14 Test Case. 64.3%
 homer    : 1 Passed over total  3 Test Case. 33.3%
-herbert  : 0 Passed over total  3 Test Case.  0.0%
-
-There is total 20 Test suites running on nodes: [troy, homer, herbert]
-
-The Total passed rate is 50.0% 
-troy     : 9 Passed over total 14 Test Case. 64.3%
-homer    : 1 Passed over total  3 Test Case. 33.3%
-herbert  : 0 Passed over total  3 Test Case.  0.0%
+herbert  : 0 Passed over total  4 Test Case.  0.0%
+lisa     : 2 Passed over total  2 Test Case.100.0%

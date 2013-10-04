@@ -189,7 +189,8 @@ public class HtmlExtract {
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write(content);
 			if (data.getIsIncludeReportSummary()){
-				bw.write("\n\n" + da.reportSummary());
+//				bw.write("\n\n" + da.reportSummary());
+				bw.write("\n\n" + this.summaryReport());
 			}
 			bw.close();
  

@@ -19,6 +19,7 @@ public class DataAnalysis {
 	}
 	
 	public String reportSummary(){	
+		reportSummary = "";
 		getNodesName();
 		getTotalPassed();
 		int totalTest = reportList.size();

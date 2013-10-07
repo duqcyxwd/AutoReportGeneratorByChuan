@@ -1,77 +1,110 @@
-Thu Oct 03 22:26:07 EDT 2013      8 interfreq_ho_SUITE                            herbert        8  13   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.herbert@seliltedes05.lmera.ericsson.se.2013-10-03_22.26.07/index.html
-Thu Oct 03 20:13:26 EDT 2013      8 interfreq_ho_SUITE                            herbert        8  13   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.herbert@seliltedes05.lmera.ericsson.se.2013-10-03_20.13.26/index.html
-Thu Oct 03 23:02:18 EDT 2013      9 rrc_conn_reestablishment_SUITE                herbert        0   0   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.herbert@seliltedes05.lmera.ericsson.se.2013-10-03_23.02.18/index.html
-Thu Oct 03 20:49:52 EDT 2013      9 rrc_conn_reestablishment_SUITE                herbert        0  28   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.herbert@seliltedes05.lmera.ericsson.se.2013-10-03_20.49.52/index.html
-Fri Oct 04 00:28:32 EDT 2013      1 inter_freq_load_balance_SUITE                 lisa          26   1  33        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-04_00.28.32/index.html
-Fri Oct 04 01:26:59 EDT 2013      2 basic_intra_eNB_handover_SUITE                lisa          14   3   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-04_01.26.59/index.html
-Fri Oct 04 01:35:15 EDT 2013      3 basic_x2_handover_SUITE                       lisa          13   1  50        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-04_01.35.15/index.html
-Fri Oct 04 01:45:36 EDT 2013      4 x2_handover_error_case_SUITE                  lisa          18   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-04_01.45.36/index.html
-Fri Oct 04 01:53:58 EDT 2013      5 packet_forwarding_SUITE                       lisa          40   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-04_01.53.58/index.html
-Fri Oct 04 02:02:03 EDT 2013      6 ue_release_SUITE                              lisa          10   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-04_02.02.03/index.html
-Fri Oct 04 02:13:57 EDT 2013      7 preemption_SUITE                              lisa          54   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-04_02.13.57/index.html
-Thu Oct 03 23:52:23 EDT 2013      8 interfreq_ho_SUITE                            lisa          21   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-03_23.52.23/index.html
-Thu Oct 03 23:58:09 EDT 2013      9 rrc_conn_reestablishment_SUITE                lisa          26   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-03_23.58.09/index.html
-Fri Oct 04 02:57:52 EDT 2013     10 multi_target_rrc_conn_reestablishment_SUITE   lisa          10   3  90        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-04_02.57.52/index.html
-Fri Oct 04 00:11:13 EDT 2013     11 mp_load_control_SUITE                         lisa           8   1  33       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-04_00.11.13/index.html
-Fri Oct 04 03:06:50 EDT 2013     12 basic_s1_handover_SUITE                       lisa           0   0   1        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-04_03.06.50/index.html
-Fri Oct 04 00:21:35 EDT 2013     13 s1_handover_error_case_SUITE                  lisa          22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-04_00.21.35/index.html
-Fri Oct 04 03:08:37 EDT 2013     14 s1_handover_packet_forwarding_SUITE           lisa          22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lisa@seliltedes09.lmera.ericsson.se.2013-10-04_03.08.37/index.html
-Fri Oct 04 00:30:18 EDT 2013      1 inter_freq_load_balance_SUITE                 lois          27   1  32        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-04_00.30.18/index.html
-Fri Oct 04 01:34:04 EDT 2013      2 basic_intra_eNB_handover_SUITE                lois          14   3   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-04_01.34.04/index.html
-Fri Oct 04 01:42:25 EDT 2013      3 basic_x2_handover_SUITE                       lois           9   1  54        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-04_01.42.25/index.html
-Fri Oct 04 01:51:42 EDT 2013      4 x2_handover_error_case_SUITE                  lois          18   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-04_01.51.42/index.html
-Fri Oct 04 01:59:46 EDT 2013      5 packet_forwarding_SUITE                       lois          40   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-04_01.59.46/index.html
-Fri Oct 04 02:07:53 EDT 2013      6 ue_release_SUITE                              lois          10   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-04_02.07.53/index.html
-Fri Oct 04 02:19:50 EDT 2013      7 preemption_SUITE                              lois           9   1  44        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-04_02.19.50/index.html
-Thu Oct 03 23:52:43 EDT 2013      8 interfreq_ho_SUITE                            lois          21   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-03_23.52.43/index.html
-Thu Oct 03 23:58:25 EDT 2013      9 rrc_conn_reestablishment_SUITE                lois          26   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-03_23.58.25/index.html
-Fri Oct 04 02:42:33 EDT 2013     10 multi_target_rrc_conn_reestablishment_SUITE   lois          10   3  90        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-04_02.42.33/index.html
-Fri Oct 04 00:11:21 EDT 2013     11 mp_load_control_SUITE                         lois           5   2  35        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-04_00.11.21/index.html
-Fri Oct 04 02:51:38 EDT 2013     12 basic_s1_handover_SUITE                       lois           0   0   1        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-04_02.51.38/index.html
-Fri Oct 04 00:23:20 EDT 2013     13 s1_handover_error_case_SUITE                  lois          22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-04_00.23.20/index.html
-Fri Oct 04 02:53:20 EDT 2013     14 s1_handover_packet_forwarding_SUITE           lois          22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.lois@seliltedes05.lmera.ericsson.se.2013-10-04_02.53.20/index.html
-Thu Oct 03 20:36:10 EDT 2013      1 inter_freq_load_balance_SUITE                 troy           5   1  54        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_20.36.10/index.html
-Thu Oct 03 20:56:18 EDT 2013      2 basic_intra_eNB_handover_SUITE                troy          15   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_20.56.18/index.html
-Thu Oct 03 21:02:32 EDT 2013      3 basic_x2_handover_SUITE                       troy           1   1  62        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_21.02.32/index.html
-Thu Oct 03 21:09:46 EDT 2013      4 x2_handover_error_case_SUITE                  troy          18   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_21.09.46/index.html
-Thu Oct 03 21:17:51 EDT 2013      5 packet_forwarding_SUITE                       troy          40   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_21.17.51/index.html
-Thu Oct 03 21:25:33 EDT 2013      6 ue_release_SUITE                              troy          10   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_21.25.33/index.html
-Thu Oct 03 21:36:38 EDT 2013      7 preemption_SUITE                              troy          54   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_21.36.38/index.html
-Thu Oct 03 19:56:08 EDT 2013      8 interfreq_ho_SUITE                            troy          21   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_19.56.08/index.html
-Thu Oct 03 20:02:34 EDT 2013      9 rrc_conn_reestablishment_SUITE                troy          26   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_20.02.34/index.html
-Thu Oct 03 22:21:21 EDT 2013     10 multi_target_rrc_conn_reestablishment_SUITE   troy          10   3  90        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_22.21.21/index.html
-Thu Oct 03 20:15:44 EDT 2013     11 mp_load_control_SUITE                         troy           8   3  31       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_20.15.44/index.html
-Thu Oct 03 22:29:54 EDT 2013     12 basic_s1_handover_SUITE                       troy           0   0   1        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_22.29.54/index.html
-Thu Oct 03 20:28:21 EDT 2013     13 s1_handover_error_case_SUITE                  troy          21   1   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_20.28.21/index.html
-Thu Oct 03 22:31:43 EDT 2013     14 s1_handover_packet_forwarding_SUITE           troy          22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.troy@seliltedes09.lmera.ericsson.se.2013-10-03_22.31.43/index.html
+Sun Oct 06 22:13:17 EDT 2013      1 inter_freq_load_balance_SUITE                 willy         18   1  41        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_22.13.17/index.html
+Sun Oct 06 17:27:30 EDT 2013      1 inter_freq_load_balance_SUITE                 willy         28   2  30        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_17.27.30/index.html
+Sun Oct 06 12:53:57 EDT 2013      1 inter_freq_load_balance_SUITE                 willy         18   1  41        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_12.53.57/index.html
+Sun Oct 06 08:24:20 EDT 2013      1 inter_freq_load_balance_SUITE                 willy         25   2  33        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_08.24.20/index.html
+Sun Oct 06 03:54:35 EDT 2013      1 inter_freq_load_balance_SUITE                 willy         26   1  33        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_03.54.35/index.html
+Sat Oct 05 23:57:09 EDT 2013      1 inter_freq_load_balance_SUITE                 willy          4   1  55        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_23.57.09/index.html
+Sat Oct 05 19:19:13 EDT 2013      1 inter_freq_load_balance_SUITE                 willy         18   4  38        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_19.19.13/index.html
+Sun Oct 06 23:02:07 EDT 2013      2 basic_intra_eNB_handover_SUITE                willy         16   1   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_23.02.07/index.html
+Sun Oct 06 18:31:53 EDT 2013      2 basic_intra_eNB_handover_SUITE                willy         17   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_18.31.53/index.html
+Sun Oct 06 13:38:52 EDT 2013      2 basic_intra_eNB_handover_SUITE                willy         17   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_13.38.52/index.html
+Sun Oct 06 09:25:51 EDT 2013      2 basic_intra_eNB_handover_SUITE                willy         16   1   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_09.25.51/index.html
+Sun Oct 06 04:56:09 EDT 2013      2 basic_intra_eNB_handover_SUITE                willy         17   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_04.56.09/index.html
+Sun Oct 06 00:14:22 EDT 2013      2 basic_intra_eNB_handover_SUITE                willy         17   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_00.14.22/index.html
+Sat Oct 05 20:06:38 EDT 2013      2 basic_intra_eNB_handover_SUITE                willy         16   1   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_20.06.38/index.html
+Sun Oct 06 23:11:04 EDT 2013      3 basic_x2_handover_SUITE                       willy          0   0   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_23.11.04/index.html
+Sun Oct 06 18:38:46 EDT 2013      3 basic_x2_handover_SUITE                       willy         58   6   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_18.38.46/index.html
+Sun Oct 06 13:45:32 EDT 2013      3 basic_x2_handover_SUITE                       willy          0   0   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_13.45.32/index.html
+Sun Oct 06 09:34:28 EDT 2013      3 basic_x2_handover_SUITE                       willy          0   0   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_09.34.28/index.html
+Sun Oct 06 05:02:59 EDT 2013      3 basic_x2_handover_SUITE                       willy          0   0   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_05.02.59/index.html
+Sun Oct 06 00:20:54 EDT 2013      3 basic_x2_handover_SUITE                       willy          0   0   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_00.20.54/index.html
+Sat Oct 05 20:15:24 EDT 2013      3 basic_x2_handover_SUITE                       willy         58   6   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_20.15.24/index.html
+Sun Oct 06 23:23:06 EDT 2013      4 x2_handover_error_case_SUITE                  willy         18   2   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_23.23.06/index.html
+Sun Oct 06 19:13:36 EDT 2013      4 x2_handover_error_case_SUITE                  willy         18   2   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_19.13.36/index.html
+Sun Oct 06 14:19:18 EDT 2013      4 x2_handover_error_case_SUITE                  willy         18   2   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_14.19.18/index.html
+Sun Oct 06 09:45:58 EDT 2013      4 x2_handover_error_case_SUITE                  willy         18   2   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_09.45.58/index.html
+Sun Oct 06 05:18:01 EDT 2013      4 x2_handover_error_case_SUITE                  willy         18   2   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_05.18.01/index.html
+Sun Oct 06 00:35:05 EDT 2013      4 x2_handover_error_case_SUITE                  willy         18   2   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_00.35.05/index.html
+Sat Oct 05 20:50:29 EDT 2013      4 x2_handover_error_case_SUITE                  willy         18   2   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_20.50.29/index.html
+Sun Oct 06 23:31:58 EDT 2013      5 packet_forwarding_SUITE                       willy         40   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_23.31.58/index.html
+Sun Oct 06 19:22:31 EDT 2013      5 packet_forwarding_SUITE                       willy         40   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_19.22.31/index.html
+Sun Oct 06 14:28:01 EDT 2013      5 packet_forwarding_SUITE                       willy         40   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_14.28.01/index.html
+Sun Oct 06 09:54:24 EDT 2013      5 packet_forwarding_SUITE                       willy         40   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_09.54.24/index.html
+Sun Oct 06 05:26:48 EDT 2013      5 packet_forwarding_SUITE                       willy         40   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_05.26.48/index.html
+Sun Oct 06 00:43:28 EDT 2013      5 packet_forwarding_SUITE                       willy         40   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_00.43.28/index.html
+Sat Oct 05 20:58:49 EDT 2013      5 packet_forwarding_SUITE                       willy         40   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_20.58.49/index.html
+Sun Oct 06 23:40:05 EDT 2013      6 ue_release_SUITE                              willy         10   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_23.40.05/index.html
+Sun Oct 06 19:30:30 EDT 2013      6 ue_release_SUITE                              willy         10   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_19.30.30/index.html
+Sun Oct 06 14:35:59 EDT 2013      6 ue_release_SUITE                              willy         10   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_14.35.59/index.html
+Sun Oct 06 10:02:27 EDT 2013      6 ue_release_SUITE                              willy         10   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_10.02.27/index.html
+Sun Oct 06 05:34:53 EDT 2013      6 ue_release_SUITE                              willy         10   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_05.34.53/index.html
+Sun Oct 06 00:51:16 EDT 2013      6 ue_release_SUITE                              willy         10   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_00.51.16/index.html
+Sat Oct 05 21:07:20 EDT 2013      6 ue_release_SUITE                              willy         10   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_21.07.20/index.html
+Sun Oct 06 23:51:45 EDT 2013      7 preemption_SUITE                              willy         54   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_23.51.45/index.html
+Sun Oct 06 19:42:08 EDT 2013      7 preemption_SUITE                              willy         54   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_19.42.08/index.html
+Sun Oct 06 14:47:33 EDT 2013      7 preemption_SUITE                              willy         54   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_14.47.33/index.html
+Sun Oct 06 10:14:17 EDT 2013      7 preemption_SUITE                              willy         54   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_10.14.17/index.html
+Sun Oct 06 05:46:35 EDT 2013      7 preemption_SUITE                              willy         54   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_05.46.35/index.html
+Sun Oct 06 01:02:43 EDT 2013      7 preemption_SUITE                              willy         54   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_01.02.43/index.html
+Sat Oct 05 21:18:59 EDT 2013      7 preemption_SUITE                              willy         54   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_21.18.59/index.html
+Mon Oct 07 00:37:28 EDT 2013      8 interfreq_ho_SUITE                            willy         21   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-07_00.37.28/index.html
+Sun Oct 06 20:27:43 EDT 2013      8 interfreq_ho_SUITE                            willy         21   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_20.27.43/index.html
+Sun Oct 06 15:32:59 EDT 2013      8 interfreq_ho_SUITE                            willy         21   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_15.32.59/index.html
+Sun Oct 06 10:59:43 EDT 2013      8 interfreq_ho_SUITE                            willy         21   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_10.59.43/index.html
+Sun Oct 06 06:32:48 EDT 2013      8 interfreq_ho_SUITE                            willy         21   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_06.32.48/index.html
+Sun Oct 06 01:48:30 EDT 2013      8 interfreq_ho_SUITE                            willy         21   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_01.48.30/index.html
+Sat Oct 05 22:04:32 EDT 2013      8 interfreq_ho_SUITE                            willy         21   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_22.04.32/index.html
+Mon Oct 07 00:43:49 EDT 2013     11 mp_load_control_SUITE                         willy          2   5  35        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-07_00.43.49/index.html
+Sun Oct 06 20:34:13 EDT 2013     11 mp_load_control_SUITE                         willy          7   3  32       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_20.34.13/index.html
+Sun Oct 06 15:39:14 EDT 2013     11 mp_load_control_SUITE                         willy          1   2  39        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_15.39.14/index.html
+Sun Oct 06 11:06:03 EDT 2013     11 mp_load_control_SUITE                         willy          3   2  37        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_11.06.03/index.html
+Sun Oct 06 06:39:01 EDT 2013     11 mp_load_control_SUITE                         willy          6   4  32       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_06.39.01/index.html
+Sun Oct 06 01:54:39 EDT 2013     11 mp_load_control_SUITE                         willy          0   2  40        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_01.54.39/index.html
+Sat Oct 05 22:10:53 EDT 2013     11 mp_load_control_SUITE                         willy          2   2  38        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_22.10.53/index.html
+Mon Oct 07 01:29:23 EDT 2013     12 basic_s1_handover_SUITE                       willy         72   6   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-07_01.29.23/index.html
+Sun Oct 06 21:17:27 EDT 2013     12 basic_s1_handover_SUITE                       willy         72   6   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_21.17.27/index.html
+Sun Oct 06 16:25:39 EDT 2013     12 basic_s1_handover_SUITE                       willy         72   6   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_16.25.39/index.html
+Sun Oct 06 11:53:07 EDT 2013     12 basic_s1_handover_SUITE                       willy         72   6   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_11.53.07/index.html
+Sun Oct 06 07:23:51 EDT 2013     12 basic_s1_handover_SUITE                       willy         72   6   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_07.23.51/index.html
+Sun Oct 06 02:40:49 EDT 2013     12 basic_s1_handover_SUITE                       willy         71   7   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_02.40.49/index.html
+Sat Oct 05 22:58:04 EDT 2013     12 basic_s1_handover_SUITE                       willy         72   6   0        No  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_22.58.04/index.html
+Mon Oct 07 02:12:09 EDT 2013     13 s1_handover_error_case_SUITE                  willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-07_02.12.09/index.html
+Sun Oct 06 21:57:39 EDT 2013     13 s1_handover_error_case_SUITE                  willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_21.57.39/index.html
+Sun Oct 06 17:12:21 EDT 2013     13 s1_handover_error_case_SUITE                  willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_17.12.21/index.html
+Sun Oct 06 12:38:45 EDT 2013     13 s1_handover_error_case_SUITE                  willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_12.38.45/index.html
+Sun Oct 06 08:09:14 EDT 2013     13 s1_handover_error_case_SUITE                  willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_08.09.14/index.html
+Sun Oct 06 03:39:33 EDT 2013     13 s1_handover_error_case_SUITE                  willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_03.39.33/index.html
+Sat Oct 05 23:42:38 EDT 2013     13 s1_handover_error_case_SUITE                  willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_23.42.38/index.html
+Mon Oct 07 02:19:48 EDT 2013     14 s1_handover_packet_forwarding_SUITE           willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-07_02.19.48/index.html
+Sun Oct 06 22:05:26 EDT 2013     14 s1_handover_packet_forwarding_SUITE           willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_22.05.26/index.html
+Sun Oct 06 17:19:57 EDT 2013     14 s1_handover_packet_forwarding_SUITE           willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_17.19.57/index.html
+Sun Oct 06 12:46:28 EDT 2013     14 s1_handover_packet_forwarding_SUITE           willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_12.46.28/index.html
+Sun Oct 06 08:16:49 EDT 2013     14 s1_handover_packet_forwarding_SUITE           willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_08.16.49/index.html
+Sun Oct 06 03:47:04 EDT 2013     14 s1_handover_packet_forwarding_SUITE           willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-06_03.47.04/index.html
+Sat Oct 05 23:50:00 EDT 2013     14 s1_handover_packet_forwarding_SUITE           willy         22   0   0       Yes  elizhma  http://gtelogs-lte.lmera.ericsson.se/elizhma/ct_run.willy@seliltedes07.lmera.ericsson.se.2013-10-05_23.50.00/index.html
 
 
 
 This is auto generate Report.
-Report time:Thu Oct 03 14:00:00 EDT 2013 to Fri Oct 04 05:00:00 EDT 2013
+Report time:Sat Oct 05 14:00:00 EDT 2013 to Mon Oct 07 05:00:00 EDT 2013
 
-Tester: eyonduu 
+Tester: elizhma 
 
-There is total 46 Test suites running on nodes: [lois, troy, herbert, lisa]
+There is total 84 Test suites running on nodes: [willy]
 
-The Total passed rate is 54.3% 
-lois     : 7 Passed over total 14 Test Case.   50.0%
-troy     : 9 Passed over total 14 Test Case.   64.3%
-herbert  : 0 Passed over total  4 Test Case.    0.0%
-lisa     : 9 Passed over total 14 Test Case.   64.3%
+The Total passed rate is 69.0% 
+willy    : 58 Passed over total 84 Test Case.   69.0%
 
 
- 1. inter_freq_load_balance_SUITE               0 Passed over total  3 Test Case.    0.0%
- 2. basic_intra_eNB_handover_SUITE              1 Passed over total  3 Test Case.   33.3%
- 3. basic_x2_handover_SUITE                     0 Passed over total  3 Test Case.    0.0%
- 4. x2_handover_error_case_SUITE                3 Passed over total  3 Test Case.  100.0%
- 5. packet_forwarding_SUITE                     3 Passed over total  3 Test Case.  100.0%
- 6. ue_release_SUITE                            3 Passed over total  3 Test Case.  100.0%
- 7. preemption_SUITE                            2 Passed over total  3 Test Case.   66.7%
- 8. interfreq_ho_SUITE                          3 Passed over total  5 Test Case.   60.0%
- 9. rrc_conn_reestablishment_SUITE              3 Passed over total  5 Test Case.   60.0%
-10. multi_target_rrc_conn_reestablishment_SUITE 0 Passed over total  3 Test Case.    0.0%
-11. mp_load_control_SUITE                       2 Passed over total  3 Test Case.   66.7%
-12. basic_s1_handover_SUITE                     0 Passed over total  3 Test Case.    0.0%
-13. s1_handover_error_case_SUITE                2 Passed over total  3 Test Case.   66.7%
-14. s1_handover_packet_forwarding_SUITE         3 Passed over total  3 Test Case.  100.0%
+ 1. inter_freq_load_balance_SUITE               0 Passed over total  7 Test Case.    0.0%
+ 2. basic_intra_eNB_handover_SUITE              7 Passed over total  7 Test Case.  100.0%
+ 3. basic_x2_handover_SUITE                     0 Passed over total  7 Test Case.    0.0%
+ 4. x2_handover_error_case_SUITE                7 Passed over total  7 Test Case.  100.0%
+ 5. packet_forwarding_SUITE                     7 Passed over total  7 Test Case.  100.0%
+ 6. ue_release_SUITE                            7 Passed over total  7 Test Case.  100.0%
+ 7. preemption_SUITE                            7 Passed over total  7 Test Case.  100.0%
+ 8. interfreq_ho_SUITE                          7 Passed over total  7 Test Case.  100.0%
+11. mp_load_control_SUITE                       2 Passed over total  7 Test Case.   28.6%
+12. basic_s1_handover_SUITE                     0 Passed over total  7 Test Case.    0.0%
+13. s1_handover_error_case_SUITE                7 Passed over total  7 Test Case.  100.0%
+14. s1_handover_packet_forwarding_SUITE         7 Passed over total  7 Test Case.  100.0%

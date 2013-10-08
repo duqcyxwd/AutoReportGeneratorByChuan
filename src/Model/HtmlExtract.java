@@ -33,11 +33,12 @@ public class HtmlExtract {
 	
 	
 
-	public HtmlExtract(Data d) {
+	public HtmlExtract() {
+		data = new Data();
 		reportList = new ArrayList<OneTestReport>();
-		this.userNames = d.getSignums();
+		this.userNames = data.getSignums();
 		link_base = link_title;
-		data = d;
+		
 
 	}
 

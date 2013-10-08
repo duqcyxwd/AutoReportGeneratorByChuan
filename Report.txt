@@ -1,76 +1,67 @@
 Mon Oct 07 19:10:10 EDT 2013      1 inter_freq_load_balance_SUITE                 carl          58   2   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_19.10.10/index.html
-Mon Oct 07 21:14:48 EDT 2013      2 basic_intra_eNB_handover_SUITE                carl          16   1   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_21.14.48/index.html
-Mon Oct 07 21:23:54 EDT 2013      3 basic_x2_handover_SUITE                       carl          61   3   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_21.23.54/index.html
-Mon Oct 07 21:45:58 EDT 2013      4 x2_handover_error_case_SUITE                  carl          18   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_21.45.58/index.html
-Mon Oct 07 21:54:34 EDT 2013      5 packet_forwarding_SUITE                       carl          40   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_21.54.34/index.html
-Mon Oct 07 22:02:46 EDT 2013      6 ue_release_SUITE                              carl          10   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_22.02.46/index.html
-Mon Oct 07 22:15:12 EDT 2013      7 preemption_SUITE                              carl          54   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_22.15.12/index.html
-Mon Oct 07 18:03:38 EDT 2013      8 interfreq_ho_SUITE                            carl          21   0   0     Note1  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_18.03.38/index.html
-Mon Oct 07 18:09:40 EDT 2013      9 rrc_conn_reestablishment_SUITE                carl          27   1   0     Note2  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_18.09.40/index.html
-Mon Oct 07 23:03:20 EDT 2013     10 multi_target_rrc_conn_reestablishment_SUITE   carl          99   4   0     Note1  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_23.03.20/index.html
-Mon Oct 07 18:20:53 EDT 2013     11 mp_load_control_SUITE                         carl          31  11   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_18.20.53/index.html
-Tue Oct 08 00:19:52 EDT 2013     12 basic_s1_handover_SUITE                       carl          73   1   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-08_00.19.52/index.html
-Mon Oct 07 19:02:26 EDT 2013     13 s1_handover_error_case_SUITE                  carl          22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_19.02.26/index.html
-Tue Oct 08 00:53:47 EDT 2013     14 s1_handover_packet_forwarding_SUITE           carl          22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-08_00.53.47/index.html
-Mon Oct 07 22:55:25 EDT 2013      1 inter_freq_load_balance_SUITE                 lrrr          58   2   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-07_22.55.25/index.html
 Tue Oct 08 04:40:32 EDT 2013      1 inter_freq_load_balance_SUITE                 lrrr          56   4   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_04.40.32/index.html
-Tue Oct 08 01:00:20 EDT 2013      2 basic_intra_eNB_handover_SUITE                lrrr          16   1   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_01.00.20/index.html
-Tue Oct 08 01:08:02 EDT 2013      3 basic_x2_handover_SUITE                       lrrr          37   3  24        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_01.08.02/index.html
-Tue Oct 08 01:35:30 EDT 2013      4 x2_handover_error_case_SUITE                  lrrr           0   0  20        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_01.35.30/index.html
-Tue Oct 08 01:47:44 EDT 2013      5 packet_forwarding_SUITE                       lrrr           0   0  40        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_01.47.44/index.html
-Tue Oct 08 01:55:42 EDT 2013      6 ue_release_SUITE                              lrrr          10   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_01.55.42/index.html
-Tue Oct 08 02:07:46 EDT 2013      7 preemption_SUITE                              lrrr          54   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_02.07.46/index.html
-Tue Oct 08 02:52:28 EDT 2013      8 interfreq_ho_SUITE                            lrrr          21   0   0     Note1  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_02.52.28/index.html
-Tue Oct 08 02:58:33 EDT 2013      9 rrc_conn_reestablishment_SUITE                lrrr          27   1   0     Note2  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_02.58.33/index.html
-Tue Oct 08 03:08:28 EDT 2013     10 multi_target_rrc_conn_reestablishment_SUITE   lrrr          14   1  88     Note1  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_03.08.28/index.html
-Tue Oct 08 03:19:02 EDT 2013     11 mp_load_control_SUITE                         lrrr          32  10   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_03.19.02/index.html
-Tue Oct 08 03:58:56 EDT 2013     12 basic_s1_handover_SUITE                       lrrr          74   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_03.58.56/index.html
-Tue Oct 08 04:24:28 EDT 2013     13 s1_handover_error_case_SUITE                  lrrr          22   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_04.24.28/index.html
-Tue Oct 08 04:32:29 EDT 2013     14 s1_handover_packet_forwarding_SUITE           lrrr          22   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_04.32.29/index.html
+Mon Oct 07 22:55:25 EDT 2013      1 inter_freq_load_balance_SUITE                 lrrr          58   2   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-07_22.55.25/index.html
+Tue Oct 08 02:07:45 EDT 2013      1 inter_freq_load_balance_SUITE                 sparkle       56   4   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_02.07.45/index.html
 Mon Oct 07 20:44:12 EDT 2013      1 inter_freq_load_balance_SUITE                 sparkle       58   2   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_20.44.12/index.html
 Mon Oct 07 18:12:12 EDT 2013      1 inter_freq_load_balance_SUITE                 sparkle       58   2   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_18.12.12/index.html
-Tue Oct 08 02:07:45 EDT 2013      1 inter_freq_load_balance_SUITE                 sparkle       56   4   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_02.07.45/index.html
+Mon Oct 07 19:04:01 EDT 2013      1 inter_freq_load_balance_SUITE                 spiderpig     58   2   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_19.04.01/index.html
+Mon Oct 07 21:14:48 EDT 2013      2 basic_intra_eNB_handover_SUITE                carl          16   1   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_21.14.48/index.html
+Tue Oct 08 01:00:20 EDT 2013      2 basic_intra_eNB_handover_SUITE                lrrr          16   1   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_01.00.20/index.html
+Tue Oct 08 04:20:16 EDT 2013      2 basic_intra_eNB_handover_SUITE                sparkle       16   1   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_04.20.16/index.html
 Mon Oct 07 22:47:11 EDT 2013      2 basic_intra_eNB_handover_SUITE                sparkle       17   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_22.47.11/index.html
 Mon Oct 07 20:15:40 EDT 2013      2 basic_intra_eNB_handover_SUITE                sparkle       17   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_20.15.40/index.html
-Tue Oct 08 04:20:16 EDT 2013      2 basic_intra_eNB_handover_SUITE                sparkle       16   1   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_04.20.16/index.html
+Mon Oct 07 21:07:44 EDT 2013      2 basic_intra_eNB_handover_SUITE                spiderpig     17   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_21.07.44/index.html
+Mon Oct 07 21:23:54 EDT 2013      3 basic_x2_handover_SUITE                       carl          61   3   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_21.23.54/index.html
+Tue Oct 08 01:08:02 EDT 2013      3 basic_x2_handover_SUITE                       lrrr          37   3  24        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_01.08.02/index.html
 Tue Oct 08 04:28:11 EDT 2013      3 basic_x2_handover_SUITE                       sparkle       61   3   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_04.28.11/index.html
 Mon Oct 07 22:52:54 EDT 2013      3 basic_x2_handover_SUITE                       sparkle       60   4   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_22.52.54/index.html
 Mon Oct 07 20:22:24 EDT 2013      3 basic_x2_handover_SUITE                       sparkle        0   0   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_20.22.24/index.html
-Mon Oct 07 23:15:55 EDT 2013      4 x2_handover_error_case_SUITE                  sparkle       18   2   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_23.15.55/index.html
-Mon Oct 07 14:03:28 EDT 2013      4 x2_handover_error_case_SUITE                  sparkle       18   2   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_14.03.28/index.html
+Mon Oct 07 21:14:28 EDT 2013      3 basic_x2_handover_SUITE                       spiderpig     62   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_21.14.28/index.html
+Mon Oct 07 21:45:58 EDT 2013      4 x2_handover_error_case_SUITE                  carl          18   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_21.45.58/index.html
+Tue Oct 08 01:35:30 EDT 2013      4 x2_handover_error_case_SUITE                  lrrr           0   0  20        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_01.35.30/index.html
 Tue Oct 08 04:49:15 EDT 2013      4 x2_handover_error_case_SUITE                  sparkle       17   3   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_04.49.15/index.html
+Mon Oct 07 23:15:55 EDT 2013      4 x2_handover_error_case_SUITE                  sparkle       18   2   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_23.15.55/index.html
+Mon Oct 07 21:34:44 EDT 2013      4 x2_handover_error_case_SUITE                  spiderpig     18   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_21.34.44/index.html
+Mon Oct 07 21:54:34 EDT 2013      5 packet_forwarding_SUITE                       carl          40   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_21.54.34/index.html
+Tue Oct 08 01:47:44 EDT 2013      5 packet_forwarding_SUITE                       lrrr           0   0  40        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_01.47.44/index.html
 Tue Oct 08 04:58:20 EDT 2013      5 packet_forwarding_SUITE                       sparkle       40   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_04.58.20/index.html
 Mon Oct 07 23:24:40 EDT 2013      5 packet_forwarding_SUITE                       sparkle       40   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_23.24.40/index.html
-Mon Oct 07 14:11:32 EDT 2013      5 packet_forwarding_SUITE                       sparkle       40   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_14.11.32/index.html
-Mon Oct 07 23:32:22 EDT 2013      6 ue_release_SUITE                              sparkle       10   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_23.32.22/index.html
-Mon Oct 07 14:19:03 EDT 2013      6 ue_release_SUITE                              sparkle       10   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_14.19.03/index.html
-Mon Oct 07 23:43:28 EDT 2013      7 preemption_SUITE                              sparkle       54   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_23.43.28/index.html
-Mon Oct 07 14:30:01 EDT 2013      7 preemption_SUITE                              sparkle       54   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_14.30.01/index.html
-Tue Oct 08 00:27:58 EDT 2013      8 interfreq_ho_SUITE                            sparkle       21   0   0     Note1  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_00.27.58/index.html
-Mon Oct 07 15:15:09 EDT 2013      8 interfreq_ho_SUITE                            sparkle       21   0   0     Note1  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_15.15.09/index.html
-Tue Oct 08 00:34:09 EDT 2013      9 rrc_conn_reestablishment_SUITE                sparkle       27   1   0     Note2  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_00.34.09/index.html
-Mon Oct 07 15:20:55 EDT 2013      9 rrc_conn_reestablishment_SUITE                sparkle       26   2   0     Note2  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_15.20.55/index.html
-Mon Oct 07 15:34:20 EDT 2013     10 multi_target_rrc_conn_reestablishment_SUITE   sparkle       35   3  65     Note1  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_15.34.20/index.html
-Tue Oct 08 00:43:33 EDT 2013     10 multi_target_rrc_conn_reestablishment_SUITE   sparkle       14   1  88     Note1  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_00.43.33/index.html
-Tue Oct 08 00:52:31 EDT 2013     11 mp_load_control_SUITE                         sparkle       33   9   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_00.52.31/index.html
-Mon Oct 07 15:46:34 EDT 2013     11 mp_load_control_SUITE                         sparkle        0   2  40        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_15.46.34/index.html
-Tue Oct 08 01:28:34 EDT 2013     12 basic_s1_handover_SUITE                       sparkle       74   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_01.28.34/index.html
-Mon Oct 07 16:26:12 EDT 2013     12 basic_s1_handover_SUITE                       sparkle        0   0   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_16.26.12/index.html
-Tue Oct 08 01:53:31 EDT 2013     13 s1_handover_error_case_SUITE                  sparkle       22   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_01.53.31/index.html
-Tue Oct 08 02:00:32 EDT 2013     14 s1_handover_packet_forwarding_SUITE           sparkle       22   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_02.00.32/index.html
-Mon Oct 07 19:04:01 EDT 2013      1 inter_freq_load_balance_SUITE                 spiderpig     58   2   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_19.04.01/index.html
-Mon Oct 07 21:07:44 EDT 2013      2 basic_intra_eNB_handover_SUITE                spiderpig     17   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_21.07.44/index.html
-Mon Oct 07 21:14:28 EDT 2013      3 basic_x2_handover_SUITE                       spiderpig     62   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_21.14.28/index.html
-Mon Oct 07 21:34:44 EDT 2013      4 x2_handover_error_case_SUITE                  spiderpig     18   2   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_21.34.44/index.html
 Mon Oct 07 21:43:04 EDT 2013      5 packet_forwarding_SUITE                       spiderpig     40   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_21.43.04/index.html
+Mon Oct 07 22:02:46 EDT 2013      6 ue_release_SUITE                              carl          10   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_22.02.46/index.html
+Tue Oct 08 01:55:42 EDT 2013      6 ue_release_SUITE                              lrrr          10   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_01.55.42/index.html
+Mon Oct 07 23:32:22 EDT 2013      6 ue_release_SUITE                              sparkle       10   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_23.32.22/index.html
 Mon Oct 07 21:50:56 EDT 2013      6 ue_release_SUITE                              spiderpig     10   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_21.50.56/index.html
+Mon Oct 07 22:15:12 EDT 2013      7 preemption_SUITE                              carl          54   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_22.15.12/index.html
+Tue Oct 08 02:07:46 EDT 2013      7 preemption_SUITE                              lrrr          54   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_02.07.46/index.html
+Mon Oct 07 23:43:28 EDT 2013      7 preemption_SUITE                              sparkle       54   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-07_23.43.28/index.html
 Mon Oct 07 22:02:39 EDT 2013      7 preemption_SUITE                              spiderpig     27   1  26        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_22.02.39/index.html
+Mon Oct 07 18:03:38 EDT 2013      8 interfreq_ho_SUITE                            carl          21   0   0     Note1  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_18.03.38/index.html
+Tue Oct 08 02:52:28 EDT 2013      8 interfreq_ho_SUITE                            lrrr          21   0   0     Note1  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_02.52.28/index.html
+Tue Oct 08 00:27:58 EDT 2013      8 interfreq_ho_SUITE                            sparkle       21   0   0     Note1  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_00.27.58/index.html
 Mon Oct 07 18:03:36 EDT 2013      8 interfreq_ho_SUITE                            spiderpig     21   0   0     Note1  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_18.03.36/index.html
+Mon Oct 07 18:09:40 EDT 2013      9 rrc_conn_reestablishment_SUITE                carl          27   1   0     Note2  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_18.09.40/index.html
+Tue Oct 08 02:58:33 EDT 2013      9 rrc_conn_reestablishment_SUITE                lrrr          27   1   0     Note2  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_02.58.33/index.html
+Tue Oct 08 00:34:09 EDT 2013      9 rrc_conn_reestablishment_SUITE                sparkle       27   1   0     Note2  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_00.34.09/index.html
 Mon Oct 07 18:09:40 EDT 2013      9 rrc_conn_reestablishment_SUITE                spiderpig     27   1   0     Note2  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_18.09.40/index.html
+Mon Oct 07 23:03:20 EDT 2013     10 multi_target_rrc_conn_reestablishment_SUITE   carl          99   4   0     Note1  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_23.03.20/index.html
+Tue Oct 08 03:08:28 EDT 2013     10 multi_target_rrc_conn_reestablishment_SUITE   lrrr          14   1  88     Note1  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_03.08.28/index.html
+Tue Oct 08 00:43:33 EDT 2013     10 multi_target_rrc_conn_reestablishment_SUITE   sparkle       14   1  88     Note1  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_00.43.33/index.html
 Mon Oct 07 22:45:15 EDT 2013     10 multi_target_rrc_conn_reestablishment_SUITE   spiderpig      0   0 103     Note1  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_22.45.15/index.html
+Mon Oct 07 18:20:53 EDT 2013     11 mp_load_control_SUITE                         carl          31  11   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_18.20.53/index.html
+Tue Oct 08 03:19:02 EDT 2013     11 mp_load_control_SUITE                         lrrr          32  10   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_03.19.02/index.html
+Tue Oct 08 00:52:31 EDT 2013     11 mp_load_control_SUITE                         sparkle       33   9   0        No  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_00.52.31/index.html
 Mon Oct 07 18:20:22 EDT 2013     11 mp_load_control_SUITE                         spiderpig     34   8   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_18.20.22/index.html
+Tue Oct 08 00:19:52 EDT 2013     12 basic_s1_handover_SUITE                       carl          73   1   0        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-08_00.19.52/index.html
+Tue Oct 08 03:58:56 EDT 2013     12 basic_s1_handover_SUITE                       lrrr          74   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_03.58.56/index.html
+Tue Oct 08 01:28:34 EDT 2013     12 basic_s1_handover_SUITE                       sparkle       74   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_01.28.34/index.html
 Mon Oct 07 22:59:16 EDT 2013     12 basic_s1_handover_SUITE                       spiderpig      0   0  74        No  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_22.59.16/index.html
+Mon Oct 07 19:02:26 EDT 2013     13 s1_handover_error_case_SUITE                  carl          22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-07_19.02.26/index.html
+Tue Oct 08 04:24:28 EDT 2013     13 s1_handover_error_case_SUITE                  lrrr          22   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_04.24.28/index.html
+Tue Oct 08 01:53:31 EDT 2013     13 s1_handover_error_case_SUITE                  sparkle       22   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_01.53.31/index.html
 Mon Oct 07 18:56:31 EDT 2013     13 s1_handover_error_case_SUITE                  spiderpig     22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_18.56.31/index.html
+Tue Oct 08 00:53:47 EDT 2013     14 s1_handover_packet_forwarding_SUITE           carl          22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.carl@seliltedes07.lmera.ericsson.se.2013-10-08_00.53.47/index.html
+Tue Oct 08 04:32:29 EDT 2013     14 s1_handover_packet_forwarding_SUITE           lrrr          22   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.lrrr@seliltedes03.lmera.ericsson.se.2013-10-08_04.32.29/index.html
+Tue Oct 08 02:00:32 EDT 2013     14 s1_handover_packet_forwarding_SUITE           sparkle       22   0   0       Yes  eminmai  http://gtelogs-lte.lmera.ericsson.se/eminmai/ct_run.sparkle@seliltedes02.lmera.ericsson.se.2013-10-08_02.00.32/index.html
 Mon Oct 07 23:01:00 EDT 2013     14 s1_handover_packet_forwarding_SUITE           spiderpig     22   0   0       Yes  eyonduu  http://gtelogs-lte.lmera.ericsson.se/eyonduu/ct_run.spiderpig@seliltedes09.lmera.ericsson.se.2013-10-07_23.01.00/index.html
 
 Note1: Result of this test suite in Legacy is empty
@@ -79,15 +70,15 @@ Note2: Can't find this suite result in Legacy
 
 
 This is auto generate Report.
-Report time:Mon Oct 07 14:00:00 EDT 2013 to Tue Oct 08 05:00:00 EDT 2013
+Report time:Mon Oct 07 17:00:00 EDT 2013 to Tue Oct 08 05:00:00 EDT 2013
 
 Tester: eyonduu eminmai 
 
-There is total 74 Test suites running on nodes: [carl, sparkle, lrrr, spiderpig]
+There is total 65 Test suites running on nodes: [carl, sparkle, lrrr, spiderpig]
 
-The Total passed rate is 61.0% 
+The Total passed rate is 60.4% 
 carl      :  7 Passed  7 Failed over total 14 Test Cases.   63.6%
-sparkle   : 16 Passed 16 Failed over total 31 Test Cases.   64.0%
+sparkle   : 12 Passed 12 Failed over total 22 Test Cases.   63.2%
 lrrr      :  5 Passed  5 Failed over total 15 Test Cases.   41.7%
 spiderpig :  8 Passed  8 Failed over total 14 Test Cases.   72.7%
 
@@ -95,14 +86,14 @@ spiderpig :  8 Passed  8 Failed over total 14 Test Cases.   72.7%
  1. inter_freq_load_balance_SUITE                0 Passed  0 Failed  Passed over total  7 Test Case.    0.0%
  2. basic_intra_eNB_handover_SUITE               3 Passed  3 Failed  Passed over total  6 Test Case.   50.0%
  3. basic_x2_handover_SUITE                      4 Passed  4 Failed  Passed over total  6 Test Case.   66.7%
- 4. x2_handover_error_case_SUITE                 4 Passed  4 Failed  Passed over total  6 Test Case.   66.7%
- 5. packet_forwarding_SUITE                      5 Passed  5 Failed  Passed over total  6 Test Case.   83.3%
- 6. ue_release_SUITE                             5 Passed  5 Failed  Passed over total  5 Test Case.  100.0%
- 7. preemption_SUITE                             4 Passed  4 Failed  Passed over total  5 Test Case.   80.0%
- 8. interfreq_ho_SUITE                           0 Passed  0 Failed  Passed over total  5 Test Case.  No Result
- 9. rrc_conn_reestablishment_SUITE               0 Passed  0 Failed  Passed over total  5 Test Case.  No Result
-10. multi_target_rrc_conn_reestablishment_SUITE  0 Passed  0 Failed  Passed over total  5 Test Case.  No Result
-11. mp_load_control_SUITE                        1 Passed  1 Failed  Passed over total  5 Test Case.   20.0%
-12. basic_s1_handover_SUITE                      2 Passed  2 Failed  Passed over total  5 Test Case.   40.0%
+ 4. x2_handover_error_case_SUITE                 3 Passed  3 Failed  Passed over total  5 Test Case.   60.0%
+ 5. packet_forwarding_SUITE                      4 Passed  4 Failed  Passed over total  5 Test Case.   80.0%
+ 6. ue_release_SUITE                             4 Passed  4 Failed  Passed over total  4 Test Case.  100.0%
+ 7. preemption_SUITE                             3 Passed  3 Failed  Passed over total  4 Test Case.   75.0%
+ 8. interfreq_ho_SUITE                           0 Passed  0 Failed  Passed over total  4 Test Case.  No Result
+ 9. rrc_conn_reestablishment_SUITE               0 Passed  0 Failed  Passed over total  4 Test Case.  No Result
+10. multi_target_rrc_conn_reestablishment_SUITE  0 Passed  0 Failed  Passed over total  4 Test Case.  No Result
+11. mp_load_control_SUITE                        1 Passed  1 Failed  Passed over total  4 Test Case.   25.0%
+12. basic_s1_handover_SUITE                      2 Passed  2 Failed  Passed over total  4 Test Case.   50.0%
 13. s1_handover_error_case_SUITE                 4 Passed  4 Failed  Passed over total  4 Test Case.  100.0%
 14. s1_handover_packet_forwarding_SUITE          4 Passed  4 Failed  Passed over total  4 Test Case.  100.0%

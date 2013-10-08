@@ -11,7 +11,7 @@ public class DataAnalysis {
 	private ArrayList<OneTestReport> reportList;
 	private HashSet<String> nodeNameSet;
 	private HashMap<Integer, String> suitesNameSet;
-	private Integer totalPassed;
+	private Integer totalPassed, totalFailed;
 	private String reportSummary;
 	private Data data;
 	
@@ -20,6 +20,7 @@ public class DataAnalysis {
 		nodeNameSet = new HashSet<String>();
 		suitesNameSet = new HashMap<Integer, String>();
 		totalPassed = 0;
+		totalFailed = 0;
 		reportSummary = new String();
 		this.data = data;
 
@@ -44,7 +45,7 @@ public class DataAnalysis {
 		
 		reportSummary += "\n\nThere is total " + totalTest + " Test suites running on nodes: " + nodeNameSet.toString() + "\n\n";
 		
-		double passedRate = 100.0*totalPassed/totalTest;
+		double passedRate = 100.0*totalPassed/(totalPassed + totalFailed);
 		reportSummary += "The Total passed rate is " + String.format("%.1f", passedRate) + "% \n";
 		
 		Iterator<String> i = nodeNameSet.iterator();
@@ -87,20 +88,26 @@ public class DataAnalysis {
 		for (OneTestReport tr: reportList) {
 			if (tr.getIsMatchwithLegacy().equals("Yes")){
 				totalPassed ++;
+			} else if(tr.getIsMatchwithLegacy().equals("No")) {
+				totalFailed++;
 			}
+				
 		}	
 	}
 	
 	
 	private void getSusRatePerSuite(String suiteName){
 		int testNumber = 0;
-		Integer totalTestNumerForNode = 0, numMatchWithLegacy = 0;
+		Integer totalTestNumerForNode = 0, numMatchWithLegacy = 0, numNotMatchWithLegacy = 0;
 		for (OneTestReport tr: reportList) {
 			if (tr.getTestName().equals(suiteName)){
 				testNumber = tr.getTestNumber();
 				totalTestNumerForNode++;
 				if (tr.getIsMatchwithLegacy().equals("Yes")){
 					numMatchWithLegacy ++;
+				}
+				if (tr.getIsMatchwithLegacy().equals("No")){
+					numNotMatchWithLegacy++;
 				}
 			}
 		}	
@@ -109,19 +116,27 @@ public class DataAnalysis {
 		reportSummary += String.format("%2d", testNumber);
 		reportSummary += ". ";
 		reportSummary += String.format("%-44s", suiteName);
-		reportSummary += String.format("%s%4s%2s%s", numMatchWithLegacy, " Passed over total ", totalTestNumerForNode, " Test Case.");
-		reportSummary += String.format("%7.1f%s",  100.0*numMatchWithLegacy/totalTestNumerForNode, "%\n");
+		reportSummary += String.format("%2s%4s%2s%4s",numMatchWithLegacy, " Passed ", numMatchWithLegacy, " Failed ");
+		reportSummary += String.format("%4s%2s%s",  " Passed over total ", totalTestNumerForNode, " Test Case.");
+		if ((numNotMatchWithLegacy + numMatchWithLegacy) == 0){
+			reportSummary += "  No Result\n";
+		} else {
+			reportSummary += String.format("%7.1f%s",  100.0*numMatchWithLegacy/(numNotMatchWithLegacy + numMatchWithLegacy), "%\n");
+		}
 	}
 	
 	private void getSusRatePerNode(String nodeName){
 		ArrayList<OneTestReport> list = new ArrayList<OneTestReport>();
-		Integer totalTestNumerForNode = 0, numMatchWithLegacy = 0;
+		Integer totalTestNumerForNode = 0, numMatchWithLegacy = 0, numNotMatchWithLegacy = 0;
 		for (OneTestReport tr: reportList) {
 			if (tr.getNodeName().equals(nodeName)){
 				list.add(tr);			
 				totalTestNumerForNode++;
 				if (tr.getIsMatchwithLegacy().equals("Yes")){
 					numMatchWithLegacy ++;
+				}
+				if (tr.getIsMatchwithLegacy().equals("No")){
+					numNotMatchWithLegacy++;
 				}
 					
 			}
@@ -130,7 +145,13 @@ public class DataAnalysis {
 		}	
 		
 		// reportSummary += (nodeName + " : " + numMatchWithLegacy + " Passed over total " + totalTestNumerForNode + " Test Case." + String.format("%.1f", 100.0*numMatchWithLegacy/totalTestNumerForNode) + "%\n");
-		reportSummary += String.format("%-8s%s%s%4s%2s%s%7.1f%s", nodeName, " : ", numMatchWithLegacy, " Passed over total ", totalTestNumerForNode, " Test Case.", 100.0*numMatchWithLegacy/totalTestNumerForNode, "%\n");
+		reportSummary += String.format("%-9s%2s%2s%4s%2s%4s", nodeName, " : ", numMatchWithLegacy, " Passed ", numMatchWithLegacy, " Failed ");
+		reportSummary += String.format("%4s%2s%s", "over total ", totalTestNumerForNode, " Test Cases.");
+		if ((numNotMatchWithLegacy + numMatchWithLegacy) == 0){
+			reportSummary += "No Result\n";
+		} else {
+			reportSummary += String.format("%7.1f%s", 100.0*numMatchWithLegacy/(numNotMatchWithLegacy + numMatchWithLegacy), "%\n");
+		}
 	}
 
 }

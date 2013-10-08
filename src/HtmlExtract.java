@@ -27,6 +27,10 @@ public class HtmlExtract {
 	private String link_base;
 	private Data data;
 	private DataAnalysis da; 
+	
+	private String notes = "\n\nNote1: Result of this test suite in Legacy is empty\nNote2: Can't find this suite result in Legacy";
+	
+	
 
 	public HtmlExtract(Data d) {
 		reportList = new ArrayList<OneTestReport>();
@@ -188,6 +192,7 @@ public class HtmlExtract {
 			FileWriter fw = new FileWriter(file.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write(content);
+			bw.write(notes);
 			if (data.getIsIncludeReportSummary()){
 //				bw.write("\n\n" + da.reportSummary());
 				bw.write("\n\n" + this.summaryReport());

@@ -18,6 +18,8 @@ public class Data {
 	private Date dateOfReportBegin;
 	private Date dateOfReportEnd;
 	
+	private DateFormat Timeformatter;
+	
 	private  Boolean isExclusiveUnnecessarySuite;
 	private  Boolean isOutPutWithReadableFormat;
 	
@@ -29,14 +31,11 @@ public class Data {
 	private String[] signums;
 	private char[] sortOrder;
 	
-
+	private Properties prop;
 	
 	public Data(){
-		Properties prop = new Properties();
-		 
-		String dateOfReportBeginString;
-		String dateOfReportEndString;
-		
+		prop = new Properties();
+		 		
     	try {
                //load a properties file
     		prop.load(new FileInputStream("config.properties"));
@@ -48,16 +47,15 @@ public class Data {
 
 			isIncludeReportSummary = prop.getProperty("isIncludeReportSummary").matches("true");
 			
-			signums = prop.getProperty("signums").trim().split(",");
+			signums = getSignumString().trim().split(",");
 
 			
 //			Get the date for Report
-			dateOfReportBeginString = prop.getProperty("dateOfReportBegin");
-			dateOfReportEndString = prop.getProperty("dateOfReportEnd");			
-			DateFormat Timeformatter = new SimpleDateFormat(prop.getProperty("SimpleDateFormat"));
+		
+			Timeformatter = new SimpleDateFormat(getTimeformatterString());
 			try {
-            	dateOfReportBegin = (Date)Timeformatter.parse(dateOfReportBeginString);
-            	dateOfReportEnd = (Date)Timeformatter.parse(dateOfReportEndString);
+            	dateOfReportBegin = (Date)Timeformatter.parse(getDateOfReportBeginString());
+            	dateOfReportEnd = (Date)Timeformatter.parse(getDateOfReportEndString());
 			} catch (ParseException e) {
 				e.printStackTrace();
 			} 
@@ -74,6 +72,21 @@ public class Data {
         }
 	}
 		
+	public String getSignumString(){
+		return prop.getProperty("signums");
+	}
+	
+	public String getDateOfReportBeginString(){
+		return prop.getProperty("dateOfReportBegin");
+	}
+	
+	public String getDateOfReportEndString(){
+		return prop.getProperty("dateOfReportEnd");
+	}
+	
+	public String getTimeformatterString(){
+		return prop.getProperty("SimpleDateFormat");
+	}
 		
 	public Boolean getIsRunAllReport() {
 		return isRunAllReport;

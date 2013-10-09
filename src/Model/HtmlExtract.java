@@ -36,11 +36,11 @@ public class HtmlExtract {
 	
 	private Main_GUI g;
 	public HtmlExtract() {
-		
 		reportList = new ArrayList<OneTestReport>();
 		link_base = link_title;
+		data =  readConfig();
 		
-
+		
 	}
 	
 	public Data readConfig(){
@@ -76,6 +76,8 @@ public class HtmlExtract {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		} 
+		
+		this.userNames = data.getSignums();
 	}
 	
 
@@ -337,6 +339,14 @@ public class HtmlExtract {
 
 	public void setGui(Main_GUI g) {
 		this.g = g;
+	}
+
+	public Data getData() {
+		return data;
+	}
+
+	public void setData(Data data) {
+		this.data = data;
 	}
 	
 }

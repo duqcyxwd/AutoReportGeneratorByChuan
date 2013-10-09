@@ -10,19 +10,18 @@ import Model.*;
 
 
 public class Main_GUI {
+	
+	int tfLength = 20;
 	JFrame f = new JFrame("Auto Report Generator by Chuan");;
 	
 	JTextArea ta = new JTextArea(40, 130);
-	// JTextField tf = new JTextField(20);
-	// JTextField tfSign = new JTextField(20);
-	// JTextField tfBeginTime = new JTextField(20);
-	// JTextField tfEndTime = new JTextField(20);
 
 	String[] labels = {"SigNums: ", "Report Begin from:", "Report End at: ", "Date Format"};
+	
 	ArrayList<JTextField> tfs;
 	JButton run = new JButton("Run");;
-	
-	
+	JButton save = new JButton("Save Result");
+	JTextField outputTf = new JTextField(tfLength);
 	Dimension a = new Dimension(1200, 900);
 	
 	HtmlExtract e;
@@ -33,15 +32,16 @@ public class Main_GUI {
 //		f.pack();
 		f.setVisible(true);
 		
-		tfs.get(0).setText("eyonduu");
-		tfs.get(1).setText("Oct 07 2013 17 00 00");
-		tfs.get(2).setText("Oct 08 2013 05 00 00");
-		tfs.get(3).setText("MMM dd yyyy HH mm ss");
-
 	}
 	
 	public void setModel(HtmlExtract e) {
 		this.e = e;
+		Data d = e.getData();
+		tfs.get(0).setText(d.getSignumString());
+		tfs.get(1).setText(d.getDateOfReportBeginString());
+		tfs.get(2).setText(d.getDateOfReportEndString());
+		tfs.get(3).setText(d.getTimeformatterString());
+		tfs.get(3).setEditable(false);
 	}
 
 	private JPanel createContentPane() {
@@ -79,7 +79,7 @@ public class Main_GUI {
         for (int i = 0; i < numPairs; i++) {
             JLabel l = new JLabel(labels[i], JLabel.TRAILING);
             p.add(l);
-            JTextField textField = new JTextField(20);
+            JTextField textField = new JTextField(tfLength);
             l.setLabelFor(textField);
             tfs.add(textField);
             p.add(textField);
@@ -93,11 +93,19 @@ public class Main_GUI {
         JPanel pa = new JPanel();
         pa.add(p);
         pa.add(run);
-        
+                
         run.addActionListener(new RunListener());
         
 		return pa;
 
+	}
+	
+	private JPanel creatOutputPane(){
+		JPanel p = new JPanel();
+		p.add(outputTf);
+		p.add(save);
+		return p;
+		
 	}
 	
 	private class RunListener implements ActionListener{

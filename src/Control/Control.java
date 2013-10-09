@@ -16,7 +16,7 @@ public class Control {
 			g.setModel(newExtract);
 			
 		} else {
-			System.out.println("hahaha");
+			System.out.println("No GUI:");
 			newExtract.startExtract();
 			String summary = newExtract.summaryReport();
 			System.out.println(summary);

@@ -13,11 +13,9 @@ public class Main_GUI {
 	
 	int tfLength = 20;
 	JFrame f = new JFrame("Auto Report Generator by Chuan");;
-	
+	JLabel l = new JLabel("More option can be find in config.properties");
 	JTextArea ta = new JTextArea(40, 130);
-
 	String[] labels = {"SigNums: ", "Report Begin from:", "Report End at: ", "Date Format"};
-	
 	ArrayList<JTextField> tfs;
 	JButton run = new JButton("Run");;
 	JButton save = new JButton("Save Result");
@@ -65,6 +63,7 @@ public class Main_GUI {
 		// sp.getViewport().setOpaque(false);
 
 		gui.add(sp);
+		gui.add(l);
 //		gui.add(tf);
 		
 		return gui;

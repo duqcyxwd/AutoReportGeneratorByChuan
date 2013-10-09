@@ -29,6 +29,7 @@ public class Data {
 //	private static Object[][] data;
 	
 	private String[] signums;
+	private String up;
 	private char[] sortOrder;
 	
 	private Properties prop;
@@ -36,10 +37,14 @@ public class Data {
 	public Data(){
 		prop = new Properties();
 		 		
+		
+		
     	try {
                //load a properties file
     		prop.load(new FileInputStream("config.properties"));
- 
+    		
+    		System.out.println(prop.getProperty("suitesList"));
+    		
                //get the property value and print it out
 			isRunAllReport = prop.getProperty("isRunAllReport").matches("true");
 			isExclusiveUnnecessarySuite = prop.getProperty("isExclusiveUnnecessarySuite").matches("true");
@@ -66,12 +71,17 @@ public class Data {
 			
 			
 			this.isGui = prop.getProperty("isGui").matches("true");
+			this.up = getUP();
 			
     	} catch (IOException ex) {
     		ex.printStackTrace();
         }
 	}
 		
+	public String getUP(){
+		return prop.getProperty("UP");
+	}
+	
 	public String getSignumString(){
 		return prop.getProperty("signums");
 	}

@@ -20,7 +20,8 @@ public class OneTestReport {
 	}
 
 
-	public OneTestReport(String reportLink, String nodeName, String testName0, String successes, String fails, String skips, Date date, String testerName) {
+	public OneTestReport(String reportLink, String nodeName, String testName0, String successes, String fails, String skips, Date date, String testerName, LegacyDataCompare ldc) {
+		
 		this.reportLink = reportLink;
 		this.nodeName = nodeName.split("@")[0];
 		
@@ -29,9 +30,7 @@ public class OneTestReport {
 		
 		int l = testNameTemp.length;
 		this.testName = testNameTemp[l-1];
-		
-		
-	
+			
 		try {
 			this.suscess = Integer.parseInt(successes);
 		} catch (Exception e) {
@@ -52,8 +51,8 @@ public class OneTestReport {
 		
 		
 		this.date = date;
-		testNumber = LegacyDataCompare.getTestNumber(testName);
-		isMatchwithLegacy = LegacyDataCompare.compareWithLegacy(this.testName, this.suscess, this.fails, this.skips);
+		testNumber = ldc.getTestNumber(testName);
+		isMatchwithLegacy = ldc.compareWithLegacy(this.testName, this.suscess, this.fails, this.skips);
 		
 		this.testerName = testerName;
 

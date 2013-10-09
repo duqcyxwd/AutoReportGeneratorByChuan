@@ -1,49 +1,70 @@
 package Model;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Properties;
+
 public class LegacyDataCompare {
 
-	public static Object[][] data = {
-		{1, "inter_freq_load_balance_SUITE", 60, 0, 0},
-		{2, "basic_intra_eNB_handover_SUITE", 17,0, 0},
-		{3, "basic_x2_handover_SUITE", 59, 5, 0},
-		{4, "x2_handover_error_case_SUITE", 18, 2, 0},
-		{5, "packet_forwarding_SUITE", 40, 0, 0},
-		{6, "ue_release_SUITE", 10, 0, 0},
-		{7, "preemption_SUITE", 54, 0, 0},
-		{8, "interfreq_ho_SUITE", -1, -1, -1},
-		{9, "rrc_conn_reestablishment_SUITE", -2, -2, -2},
-		{10, "multi_target_rrc_conn_reestablishment_SUITE", -1, -1, -1},
-		{11, "mp_load_control_SUITE", 34,8,0},
-		{12, "basic_s1_handover_SUITE", 74, 0, 0},
-		{13, "s1_handover_error_case_SUITE", 22, 0, 0},
-		{14, "s1_handover_packet_forwarding_SUITE", 22, 0, 0}
-    };
-	private static int length = data.length;
-	public LegacyDataCompare() {	
-	}
+	private ArrayList<LegacyData> legacyList;
+	private Integer length = legacyList.size();
 	
-	public static Integer getTestNumber(String testName){
+	public LegacyDataCompare(Data data) {	
+		 ArrayList<LegacyData> legacyList = new ArrayList<LegacyData>();
+		 Properties prop = new Properties();
+		 
+		 try {
+	           //load a properties file
+			prop.load(new FileInputStream("LegacyResultData.txt"));
+			System.out.println(prop.getProperty(data.getUP()));
+			
+			String s = prop.getProperty(data.getUP());
+	
+	
+	        String ss[] = s.replace(" ", "").replace("}", "").replace("{", "").replace("\"", "").split(",");
+
+			for (int i = 0; i < ss.length/5; i++){
+				Integer suiteNum = Integer.parseInt(ss[5*i]);
+	            String suiteName = ss[5*i + 1];
+	            Integer susNum = Integer.parseInt(ss[5*i + 2]);
+	            Integer failNum = Integer.parseInt(ss[5*i + 3]);
+	            Integer skipNum = Integer.parseInt(ss[5*i + 4]);
+				legacyList.add(new LegacyData(suiteNum, suiteName, susNum, failNum, skipNum));
+	        }
+		 } catch (IOException ex) {
+	    		ex.printStackTrace();
+		 }
+//			for (LegacyData ld: legacyList){
+//				System.out.println(ld);
+//			}
+			
+	}
+
+
+	public Integer getTestNumber(String testName){
         
         for (int i = 0; i < length; i++)
         {
-           if (data[i][1].equals(testName))
-                return (Integer) data[i][0];
+           if (legacyList.get(i).getSuiteName().equals(testName))
+        	   
+                return legacyList.get(i).getSuiteNumber();
         }		
 		
 		return 0;
 	}
 	
-	public static String compareWithLegacy(String testName, Integer successes, Integer fails, Integer skipped){
+	public String compareWithLegacy(String testName, Integer successes, Integer fails, Integer skipped){
 		for (int i = 0; i < length; i++)
 		{
-	       if (data[i][1].equals(testName)){
-	    	    if ((Integer) data[i][2] == -1)
+	       if  (legacyList.get(i).getSuiteName().equals(testName)){
+	    	    if (legacyList.get(i).getSusNum() == -1)
 //	    	    	return "No result from Legacy";
 	    	    	return "Note1";
-	    	    if ((Integer) data[i][2] == -2)
+	    	    if (legacyList.get(i).getSusNum() == -2)
 //	    	    	return "Can't find in Legacy";
 	    	    	return "Note2";
-				if (successes >= (Integer) data[i][2]
+				if (successes >= (Integer) legacyList.get(i).getSusNum()
 //				 && fails <= (Integer) data[i][3]
 //				 && skipped <= (Integer) data[i][4]
 						)	return "Yes";	

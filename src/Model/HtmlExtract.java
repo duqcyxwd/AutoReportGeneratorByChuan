@@ -114,7 +114,7 @@ public class HtmlExtract {
 //			e.printStackTrace();
 //		}
 		
-
+		LegacyDataCompare ld = new LegacyDataCompare(data);
 		
 	    for (Element table2 : doc.select("table[id=SortableTable]")) {
 	        for (Element row : table2.select("tr")) {        	
@@ -135,7 +135,7 @@ public class HtmlExtract {
 		            suscess = tds.get(6).text();
 		            fails = tds.get(7).text();
 		            skips = tds.get(8).text();
-		            reportList.add(new OneTestReport(reportLink, nodeName, testName, suscess, fails, skips, date, userName));
+		            reportList.add(new OneTestReport(reportLink, nodeName, testName, suscess, fails, skips, date, userName, ld));
 	            }
 	        }
 	    }

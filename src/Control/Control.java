@@ -8,7 +8,7 @@ public class Control {
 	private HtmlExtract newExtract;
 	public Control(){
 		newExtract = new HtmlExtract();
-		Data d = newExtract.readConfig();
+		Data d = newExtract.getData();
 		
 		if (d.isGui()){
 			g = new Main_GUI();

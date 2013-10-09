@@ -33,6 +33,7 @@ public class HtmlExtract {
 	
 	private String notes = "\n\nNote1: Result of this test suite in Legacy is empty\nNote2: Can't find this suite result in Legacy";
 	
+	private String reportFileName = "Report.txt";
 	
 	private Main_GUI g;
 	public HtmlExtract() {
@@ -46,6 +47,7 @@ public class HtmlExtract {
 	public Data readConfig(){
 		data = new Data();
 		this.userNames = data.getSignums();
+		reportFileName = data.getSignumString() + " Report.txt";
 		return data;
 	}
 
@@ -65,6 +67,14 @@ public class HtmlExtract {
 //	    System.out.println("There is " + reportList.size() + " Test suites");
 	}
 	
+	public String getReportFileName() {
+		return reportFileName;
+	}
+
+	public void setReportFileName(String reportFileName) {
+		this.reportFileName = reportFileName;
+	}
+
 	private void readDataFromGUI() {
 		data.setSignums(g.getSignums());	
 
@@ -78,6 +88,7 @@ public class HtmlExtract {
 		} 
 		
 		this.userNames = data.getSignums();
+		
 	}
 	
 
@@ -206,11 +217,11 @@ public class HtmlExtract {
 	}
 	
 	public void write(){
+		this.reportFileName = g.getOutputFileName();
+		String content = this.toString();
+		
 		try {
-			 
-			String content = this.toString();
- 
-			File file = new File("Report.txt");
+			File file = new File(reportFileName);
  
 			// if file doesnt exists, then create it
 			if (!file.exists()) {

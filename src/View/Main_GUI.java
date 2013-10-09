@@ -42,6 +42,8 @@ public class Main_GUI {
 		tfs.get(2).setText(d.getDateOfReportEndString());
 		tfs.get(3).setText(d.getTimeformatterString());
 		tfs.get(3).setEditable(false);
+		
+		outputTf.setText(e.getReportFileName());
 	}
 
 	private JPanel createContentPane() {
@@ -93,7 +95,8 @@ public class Main_GUI {
         JPanel pa = new JPanel();
         pa.add(p);
         pa.add(run);
-                
+        pa.add(creatOutputPane());
+        
         run.addActionListener(new RunListener());
         
 		return pa;
@@ -102,8 +105,12 @@ public class Main_GUI {
 	
 	private JPanel creatOutputPane(){
 		JPanel p = new JPanel();
+		JLabel l = new JLabel("Output File Name:");
+		p.add(l);
 		p.add(outputTf);
 		p.add(save);
+		
+		save.addActionListener(new RunListener());
 		return p;
 		
 	}
@@ -121,6 +128,8 @@ public class Main_GUI {
 				// ta.append(summary);
 				System.out.println(summary);
 //				newExtract.write();
+			} else if (arg0.getSource().equals(save)){
+				e.write();
 			}
 		}
 	}
@@ -141,4 +150,7 @@ public class Main_GUI {
 		return tfs.get(3).getText();
 	}
 
+	public String getOutputFileName() {
+		return outputTf.getText();
+	}
 }

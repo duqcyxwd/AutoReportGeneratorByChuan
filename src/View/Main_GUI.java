@@ -24,6 +24,8 @@ public class Main_GUI {
 	
 	
 	Dimension a = new Dimension(1200, 900);
+	
+	HtmlExtract e;
 	public Main_GUI(){
 		f.setSize(a);
 		f.setContentPane(this.createContentPane());
@@ -36,6 +38,10 @@ public class Main_GUI {
 		tfs.get(2).setText("Oct 08 2013 05 00 00");
 		tfs.get(3).setText("MMM dd yyyy HH mm ss");
 
+	}
+	
+	public void setModel(HtmlExtract e) {
+		this.e = e;
 	}
 
 	private JPanel createContentPane() {
@@ -101,17 +107,30 @@ public class Main_GUI {
 			// TODO Auto-generated method stub
 			if (arg0.getSource().equals(run)){
 
-				HtmlExtract newExtract = new HtmlExtract();
-				newExtract.startExtract();
-				String summary = newExtract.summaryReport();
+//				HtmlExtract newExtract = new HtmlExtract();
+				e.startExtract();
+				String summary = e.summaryReport();
 				// ta.append(summary);
 				System.out.println(summary);
 //				newExtract.write();
 			}
 		}
-		
 	}
-	
 
+	public String getSignums() {
+		return tfs.get(0).getText();
+	}
+
+	public String getBeginTime() {
+		return tfs.get(1).getText();
+	}
+
+	public String getEndTime() {
+		return tfs.get(2).getText();
+	}
+
+	public String getTimeFormat() {
+		return tfs.get(3).getText();
+	}
 
 }

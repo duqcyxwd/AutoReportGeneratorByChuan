@@ -4,6 +4,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import View.Main_GUI;
+
 import java.io.*;
 import java.text.Collator;
 import java.text.DateFormat;
@@ -32,18 +34,26 @@ public class HtmlExtract {
 	private String notes = "\n\nNote1: Result of this test suite in Legacy is empty\nNote2: Can't find this suite result in Legacy";
 	
 	
-
+	private Main_GUI g;
 	public HtmlExtract() {
-		data = new Data();
+		
 		reportList = new ArrayList<OneTestReport>();
-		this.userNames = data.getSignums();
 		link_base = link_title;
 		
 
 	}
+	
+	public Data readConfig(){
+		data = new Data();
+		this.userNames = data.getSignums();
+		return data;
+	}
 
 	public void startExtract() {
 
+		if (data.isGui()) 
+			readDataFromGUI();
+		
 		System.out.println("Start Extract info from website...");
 		for(String userName: userNames){
 			extract(userName);
@@ -55,6 +65,20 @@ public class HtmlExtract {
 //	    System.out.println("There is " + reportList.size() + " Test suites");
 	}
 	
+	private void readDataFromGUI() {
+		data.setSignums(g.getSignums());	
+
+
+		DateFormat Timeformatter = new SimpleDateFormat(g.getTimeFormat());
+		try {
+			data.setDateOfReportBegin((Date)Timeformatter.parse(g.getBeginTime()));
+			data.setDateOfReportEnd((Date)Timeformatter.parse(g.getEndTime()));	
+		} catch (ParseException e) {
+			e.printStackTrace();
+		} 
+	}
+	
+
 	public void extract(String userName) {
 		
 		String reportLink, testName, nodeName, suscess, fails, skips;
@@ -309,6 +333,10 @@ public class HtmlExtract {
             }
         };
 		Collections.sort(reportList, comparatorA);
+	}
+
+	public void setGui(Main_GUI g) {
+		this.g = g;
 	}
 	
 }

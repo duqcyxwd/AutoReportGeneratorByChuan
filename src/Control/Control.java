@@ -3,7 +3,26 @@ import Model.Data;
 import Model.HtmlExtract;
 import View.Main_GUI;
 
-public class Main {
+public class Control {
+	private Main_GUI g;
+	private HtmlExtract newExtract;
+	public Control(){
+		newExtract = new HtmlExtract();
+		Data d = newExtract.readConfig();
+		
+		if (d.isGui()){
+			g = new Main_GUI();
+			newExtract.setGui(g);
+			g.setModel(newExtract);
+			
+		} else {
+			System.out.println("hahaha");
+			newExtract.startExtract();
+			String summary = newExtract.summaryReport();
+			System.out.println(summary);
+			newExtract.write();
+		}
+	}
 
 	public static void main(String[] args) {
 
@@ -22,6 +41,6 @@ public class Main {
 //		String summary = newExtract.summaryReport();
 //		System.out.println(summary);
 //		newExtract.write();
-		Main_GUI g = new Main_GUI();
+		Control c = new Control();
 	}
 }

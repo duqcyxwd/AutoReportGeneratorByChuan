@@ -22,10 +22,14 @@ public class Data {
 	private  Boolean isOutPutWithReadableFormat;
 	
 	private Boolean isIncludeReportSummary;
+	
+	private Boolean isGui;
 //	private static Object[][] data;
 	
 	private String[] signums;
 	private char[] sortOrder;
+	
+
 	
 	public Data(){
 		Properties prop = new Properties();
@@ -50,10 +54,10 @@ public class Data {
 //			Get the date for Report
 			dateOfReportBeginString = prop.getProperty("dateOfReportBegin");
 			dateOfReportEndString = prop.getProperty("dateOfReportEnd");			
-			DateFormat formatter = new SimpleDateFormat(prop.getProperty("SimpleDateFormat"));
+			DateFormat Timeformatter = new SimpleDateFormat(prop.getProperty("SimpleDateFormat"));
 			try {
-            	dateOfReportBegin = (Date)formatter.parse(dateOfReportBeginString);
-            	dateOfReportEnd = (Date)formatter.parse(dateOfReportEndString);
+            	dateOfReportBegin = (Date)Timeformatter.parse(dateOfReportBeginString);
+            	dateOfReportEnd = (Date)Timeformatter.parse(dateOfReportEndString);
 			} catch (ParseException e) {
 				e.printStackTrace();
 			} 
@@ -61,6 +65,9 @@ public class Data {
 //			Get the sort order for data
 			String temp = prop.getProperty("sortOrder");
 			this.sortOrder = temp.toCharArray();
+			
+			
+			this.isGui = prop.getProperty("isGui").matches("true");
 			
     	} catch (IOException ex) {
     		ex.printStackTrace();
@@ -106,28 +113,51 @@ public class Data {
 		return signums;
 	}
 
-	public void setSignums(String[] signums) {
-		this.signums = signums;
+	public void setSignums(String signums) {
+		this.signums = signums.trim().split(",");;
 	}
-
-
-
 
 	public char[] getSortOrder() {
 		return sortOrder;
 	}
 
-
-
-
 	public Boolean getIsIncludeReportSummary() {
 		return isIncludeReportSummary;
 	}
 
-
-
-
 	public void setIsIncludeReportSummary(Boolean isIncludeReportSummary) {
 		this.isIncludeReportSummary = isIncludeReportSummary;
 	}
+
+
+	public boolean isGui() {
+		// TODO Auto-generated method stub
+		return isGui;
+	}
+
+
+	public Boolean getIsGui() {
+		return isGui;
+	}
+
+
+	public void setIsGui(Boolean isGui) {
+		this.isGui = isGui;
+	}
+
+
+	public void setDateOfReportBegin(Date dateOfReportBegin) {
+		this.dateOfReportBegin = dateOfReportBegin;
+	}
+
+
+	public void setDateOfReportEnd(Date dateOfReportEnd) {
+		this.dateOfReportEnd = dateOfReportEnd;
+	}
+
+
+	public void setSortOrder(char[] sortOrder) {
+		this.sortOrder = sortOrder;
+	}
+
 }

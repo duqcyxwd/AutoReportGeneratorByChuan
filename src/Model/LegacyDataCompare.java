@@ -20,13 +20,17 @@ public class LegacyDataCompare {
 			prop.load(new FileInputStream("LegacyResultData.txt"));
 		//			System.out.println(prop.getProperty(data.getUP()));
 
-
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}
 
 		String s = prop.getProperty(data.getUP());
 			
+//		if (s == null){
+//			System.out.println(" =================================================================================================");
+//			System.out.println("       No Legacy result for UP:" + data.getUp() + "\n     Please Add legacy result to LegacyResultData.txt");
+//			System.out.println(" =================================================================================================");
+//		}
 			
 		String ss[] = s.replace(" ", "").replace("}", "").replace("{", "").replace("\"", "").split(",");
 		

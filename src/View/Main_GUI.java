@@ -19,7 +19,7 @@ public class Main_GUI {
 	ArrayList<JTextField> tfs;
 	JButton run = new JButton("Run");;
 	JButton save = new JButton("Save Result");
-	JButton disPlayAllResult = new JButton("Display Result");
+	JButton disPlayAllResult = new JButton("Display Test Suite Result Table ");
 	JTextField outputTf = new JTextField(tfLength);
 	Dimension a = new Dimension(1200, 900);
 	
@@ -51,20 +51,25 @@ public class Main_GUI {
 //		gui.setBackground(Color.black);
 		
 		gui.add(creatAddingPane());
+		gui.add(creatButtonPane());
+		gui.add(creatOutputPane());
 	
 		// ta.setBackground(Color.white);
 		JScrollPane sp = new JScrollPane(ta);
 		
+		
 //		Redirect message from console to GUI
-		MessageConsole mc = new MessageConsole(ta);
-		mc.redirectOut();
-		mc.redirectErr(Color.RED, null);
+//		MessageConsole mc = new MessageConsole(ta);
+//		mc.redirectOut();
+//		mc.redirectErr(Color.RED, null);
 
+		
+		
 		ta.setFont(new Font("Courier New", Font.PLAIN, 13));  
 		// mc.setMessageLines(100);
 
-		// sp.setOpaque(false);
-		// sp.getViewport().setOpaque(false);
+		sp.setOpaque(false);
+		sp.getViewport().setOpaque(false);
 
 		gui.add(sp);
 		gui.add(l);
@@ -95,8 +100,16 @@ public class Main_GUI {
                                         numPairs, 2, //rows, cols
                                         6, 6,        //initX, initY
                                         6, 6);       //xPad, yPad
-        JPanel pa = new JPanel();
-        pa.add(p);
+
+        
+		return p;
+
+	}
+	
+	private JPanel creatButtonPane(){
+        JPanel pa = new JPanel(new SpringLayout());
+        
+
         pa.add(run);
         
         disPlayAllResult.addActionListener(new RunListener());
@@ -106,15 +119,22 @@ public class Main_GUI {
         
         run.addActionListener(new RunListener());
         
-		return pa;
-
+        
+        SpringUtilities.makeCompactGrid(pa,
+                2, 1, //rows, cols
+                6, 6,        //initX, initY
+                6, 6);       //xPad, yPad
+        
+        return pa;
 	}
 	
 	private JPanel creatOutputPane(){
 		JPanel p = new JPanel();
 		JLabel l = new JLabel("Output File Name:");
+		
 		p.add(l);
 		p.add(outputTf);
+		
 		p.add(save);
 		
 		save.addActionListener(new RunListener());
@@ -129,8 +149,14 @@ public class Main_GUI {
 			// TODO Auto-generated method stub
 			if (arg0.getSource().equals(run)){
 
-//				HtmlExtract newExtract = new HtmlExtract();
+//				HtmlExtract newExtract = new HtmlExtract();		
 				e.startExtract();
+//				try {
+//					
+//				} catch (Exception e2) {
+//					
+//				}
+
 				String summary = e.summaryReport();
 				// ta.append(summary);
 				System.out.println(summary);

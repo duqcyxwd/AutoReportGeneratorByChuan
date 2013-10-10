@@ -17,6 +17,7 @@ public class DataAnalysis {
 	private Data data;
 	
 	public DataAnalysis(ArrayList<OneTestReport> reportList, Data data) {
+//		
 		this.reportList = reportList;
 		nodeNameSet = new HashSet<String>();
 		suitesNameSet = new HashMap<Integer, String>();
@@ -36,7 +37,7 @@ public class DataAnalysis {
 		reportSummary = "\n\nThis is auto generate Report.\n";
 
 		reportSummary += "Report time:" + data.getDateOfReportBegin() +" to " + data.getDateOfReportEnd() + "\n\n";
-		reportSummary += "Current UP: " + data.getUP() + "\n";
+		reportSummary += "Current UP: " + data.getUp() + "\n";
 		reportSummary += "Tester: ";
 		
 		for (int i =0; i < data.getSignums().length; i ++) {

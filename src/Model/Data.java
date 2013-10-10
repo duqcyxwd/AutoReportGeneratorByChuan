@@ -50,15 +50,15 @@ public class Data {
 
 			isIncludeReportSummary = prop.getProperty("isIncludeReportSummary").matches("true");
 			
-			signums = getSignumString().trim().split(",");
+			signums = getSignumStringFromProperty().trim().split(",");
 
 			
 //			Get the date for Report
 		
-			Timeformatter = new SimpleDateFormat(getTimeformatterString());
+			Timeformatter = new SimpleDateFormat(getTimeformatterStringFromProperty());
 			try {
-            	dateOfReportBegin = (Date)Timeformatter.parse(getDateOfReportBeginString());
-            	dateOfReportEnd = (Date)Timeformatter.parse(getDateOfReportEndString());
+            	dateOfReportBegin = (Date)Timeformatter.parse(getDateOfReportBeginStringFromProperty());
+            	dateOfReportEnd = (Date)Timeformatter.parse(getDateOfReportEndStringFromProperty());
 			} catch (ParseException e) {
 				e.printStackTrace();
 			} 
@@ -76,23 +76,23 @@ public class Data {
         }
 	}
 		
-	public String getUP(){
+	private String getUP(){
 		return prop.getProperty("UP");
 	}
 	
-	public String getSignumString(){
+	public String getSignumStringFromProperty(){
 		return prop.getProperty("signums");
 	}
 	
-	public String getDateOfReportBeginString(){
+	public String getDateOfReportBeginStringFromProperty(){
 		return prop.getProperty("dateOfReportBegin");
 	}
 	
-	public String getDateOfReportEndString(){
+	public String getDateOfReportEndStringFromProperty(){
 		return prop.getProperty("dateOfReportEnd");
 	}
 	
-	public String getTimeformatterString(){
+	public String getTimeformatterStringFromProperty(){
 		return prop.getProperty("SimpleDateFormat");
 	}
 		

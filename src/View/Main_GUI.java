@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 import javax.swing.*;
+import javax.swing.border.*;
 
 import Model.*;
 
@@ -13,7 +14,7 @@ public class Main_GUI {
 	
 	int tfLength = 20;
 	JFrame f = new JFrame("Auto Report Generator by Chuan");;
-	JLabel l = new JLabel("More option can be find in config.properties");
+	JTextArea l1 = new JTextArea("More option can be find in config.properties \nLegacy result is load from LegacyResultData.properties");
 	JTextArea ta = new JTextArea(40, 130);
 	String[] labels = {"SigNums: ", "Report Begin from:", "Report End at: ", "Date Format", "UP"};
 	ArrayList<JTextField> tfs;
@@ -36,12 +37,12 @@ public class Main_GUI {
 	public void setModel(HtmlExtract e) {
 		this.e = e;
 		Data d = e.getData();
-		tfs.get(0).setText(d.getSignumString());
-		tfs.get(1).setText(d.getDateOfReportBeginString());
-		tfs.get(2).setText(d.getDateOfReportEndString());
-		tfs.get(3).setText(d.getTimeformatterString());
+		tfs.get(0).setText(d.getSignumStringFromProperty());
+		tfs.get(1).setText(d.getDateOfReportBeginStringFromProperty());
+		tfs.get(2).setText(d.getDateOfReportEndStringFromProperty());
+		tfs.get(3).setText(d.getTimeformatterStringFromProperty());
 		tfs.get(3).setEditable(false);
-		tfs.get(4).setText(d.getUP());
+		tfs.get(4).setText(d.getUp());
 		
 		outputTf.setText(e.getReportFileName());
 	}
@@ -59,9 +60,9 @@ public class Main_GUI {
 		
 		
 //		Redirect message from console to GUI
-//		MessageConsole mc = new MessageConsole(ta);
-//		mc.redirectOut();
-//		mc.redirectErr(Color.RED, null);
+		MessageConsole mc = new MessageConsole(ta);
+		mc.redirectOut();
+		mc.redirectErr(Color.RED, null);
 
 		
 		
@@ -72,7 +73,10 @@ public class Main_GUI {
 		sp.getViewport().setOpaque(false);
 
 		gui.add(sp);
-		gui.add(l);
+		gui.add(l1);
+		l1.setEditable(false);
+		l1.setFont(new Font("Calibri", Font.BOLD, 16));
+		l1.setBackground(Color.gray);
 //		gui.add(tf);
 		
 		return gui;
@@ -150,17 +154,15 @@ public class Main_GUI {
 			if (arg0.getSource().equals(run)){
 
 //				HtmlExtract newExtract = new HtmlExtract();		
-				e.startExtract();
-//				try {
-//					
-//				} catch (Exception e2) {
-//					
-//				}
+				
+				try {
+					e.startExtract();
+				} catch (Exception e2) {
+					
+				}
 
 				String summary = e.summaryReport();
-				// ta.append(summary);
 				System.out.println(summary);
-//				newExtract.write();
 			} else if (arg0.getSource().equals(save)){
 				e.write();
 			} else if (arg0.getSource().equals(disPlayAllResult)){

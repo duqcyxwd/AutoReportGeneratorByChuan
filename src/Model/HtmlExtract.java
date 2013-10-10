@@ -48,7 +48,7 @@ public class HtmlExtract {
 		data = new Data();
 		
 		this.userNames = data.getSignums();
-		reportFileName = data.getSignumString() + " Report.txt";
+		reportFileName = data.getSignumStringFromProperty() + " Report.txt";
 		return data;
 	}
 
@@ -58,12 +58,14 @@ public class HtmlExtract {
 			readDataFromGUI();
 		
 		System.out.println("Start Extract info from website...");
+
 		for(String userName: userNames){
 			extract(userName);
 		}
 //		if (Data.isCleanUpRun){
 		this.cleaUp();
 		this.sort();
+		
 		
 //	    System.out.println("There is " + reportList.size() + " Test suites");
 	}
@@ -78,8 +80,6 @@ public class HtmlExtract {
 
 	private void readDataFromGUI() {
 		data.setSignums(g.getSignums());	
-
-
 		DateFormat Timeformatter = new SimpleDateFormat(g.getTimeFormat());
 		try {
 			data.setDateOfReportBegin((Date)Timeformatter.parse(g.getBeginTime()));
@@ -90,7 +90,6 @@ public class HtmlExtract {
 		} 
 		
 		this.userNames = data.getSignums();
-		
 	}
 	
 
@@ -214,6 +213,7 @@ public class HtmlExtract {
 	}
 	
 	public String summaryReport(){
+
 		da = new DataAnalysis(reportList, data);
 		return da.reportSummary();
 	}

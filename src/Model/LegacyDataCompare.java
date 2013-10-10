@@ -17,21 +17,27 @@ public class LegacyDataCompare {
 
 		try {
 		   //load a properties file
-			prop.load(new FileInputStream("LegacyResultData.txt"));
+			prop.load(new FileInputStream("LegacyResultData.properties"));
 		//			System.out.println(prop.getProperty(data.getUP()));
 
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}
 
-		String s = prop.getProperty(data.getUP());
-			
-//		if (s == null){
-//			System.out.println(" =================================================================================================");
-//			System.out.println("       No Legacy result for UP:" + data.getUp() + "\n     Please Add legacy result to LegacyResultData.txt");
-//			System.out.println(" =================================================================================================");
-//		}
-			
+		String s = prop.getProperty(data.getUp());
+		if (s == null){
+			System.out.println(" =================================================================================================");
+			System.out.println("       No Legacy result for UP:" + data.getUp() + "\n     Please Add legacy result to LegacyResultData.txt");
+			System.out.println(" =================================================================================================");
+		}
+		
+//		System.out.println("==================="+ data.getUp());
+//		System.out.println(s);
+//		String s0000 = prop.getProperty(data.getUp());
+//		System.out.println(s0000);
+//		System.out.println(prop.getProperty(data.getUp()));
+//		System.out.println(prop.getProperty("r3AT"));
+		
 		String ss[] = s.replace(" ", "").replace("}", "").replace("{", "").replace("\"", "").split(",");
 		
 		for (int i = 0; i < ss.length/5; i++){

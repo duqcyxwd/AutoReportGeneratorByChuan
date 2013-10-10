@@ -18,6 +18,9 @@ public class Control {
 		} else {
 			System.out.println("No GUI:");
 			newExtract.startExtract();
+			
+
+			
 			String summary = newExtract.summaryReport();
 			System.out.println(summary);
 			newExtract.write();

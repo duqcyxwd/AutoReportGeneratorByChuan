@@ -34,7 +34,9 @@ public class DataAnalysis {
 		getTotalPassed();
 		
 		reportSummary = "\n\nThis is auto generate Report.\n";
+
 		reportSummary += "Report time:" + data.getDateOfReportBegin() +" to " + data.getDateOfReportEnd() + "\n\n";
+		reportSummary += "Current UP: " + data.getUP() + "\n";
 		reportSummary += "Tester: ";
 		
 		for (int i =0; i < data.getSignums().length; i ++) {
@@ -117,7 +119,7 @@ public class DataAnalysis {
 		reportSummary += String.format("%2d", testNumber);
 		reportSummary += ". ";
 		reportSummary += String.format("%-44s", suiteName);
-		reportSummary += String.format("%2s%4s%2s%4s",numMatchWithLegacy, " Passed ", numMatchWithLegacy, " Failed ");
+		reportSummary += String.format("%2s%4s%2s%4s",numMatchWithLegacy, " Passed ", numNotMatchWithLegacy, " Failed ");
 		reportSummary += String.format("%4s%2s%s",  " Passed over total ", totalTestNumerForNode, " Test Case.");
 		if ((numNotMatchWithLegacy + numMatchWithLegacy) == 0){
 			reportSummary += "  No Result\n";
@@ -146,7 +148,7 @@ public class DataAnalysis {
 		}	
 		
 		// reportSummary += (nodeName + " : " + numMatchWithLegacy + " Passed over total " + totalTestNumerForNode + " Test Case." + String.format("%.1f", 100.0*numMatchWithLegacy/totalTestNumerForNode) + "%\n");
-		reportSummary += String.format("%-9s%2s%2s%4s%2s%4s", nodeName, " : ", numMatchWithLegacy, " Passed ", numMatchWithLegacy, " Failed ");
+		reportSummary += String.format("%-9s%2s%2s%4s%2s%4s", nodeName, " : ", numMatchWithLegacy, " Passed ", numNotMatchWithLegacy, " Failed ");
 		reportSummary += String.format("%4s%2s%s", "over total ", totalTestNumerForNode, " Test Cases.");
 		if ((numNotMatchWithLegacy + numMatchWithLegacy) == 0){
 			reportSummary += "No Result\n";

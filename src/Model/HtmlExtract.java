@@ -46,6 +46,7 @@ public class HtmlExtract {
 	
 	public Data readConfig(){
 		data = new Data();
+		
 		this.userNames = data.getSignums();
 		reportFileName = data.getSignumString() + " Report.txt";
 		return data;
@@ -83,6 +84,7 @@ public class HtmlExtract {
 		try {
 			data.setDateOfReportBegin((Date)Timeformatter.parse(g.getBeginTime()));
 			data.setDateOfReportEnd((Date)Timeformatter.parse(g.getEndTime()));	
+			data.setUp(g.getUP());
 		} catch (ParseException e) {
 			e.printStackTrace();
 		} 
@@ -94,10 +96,10 @@ public class HtmlExtract {
 
 	public void extract(String userName) {
 		
-		String reportLink, testName, nodeName, suscess, fails, skips;
+		LegacyDataCompare ld = new LegacyDataCompare(data);
 		
-		System.out.println("Extracting Data for " + userName);
-				
+		String reportLink, testName, nodeName, suscess, fails, skips;
+		System.out.println("Extracting Data for " + userName);		
 		Document doc = null;
 		try {
 			doc = Jsoup.connect(link_title + userName + link_all_runs).get();
@@ -114,7 +116,7 @@ public class HtmlExtract {
 //			e.printStackTrace();
 //		}
 		
-		LegacyDataCompare ld = new LegacyDataCompare(data);
+
 		
 	    for (Element table2 : doc.select("table[id=SortableTable]")) {
 	        for (Element row : table2.select("tr")) {        	
@@ -217,7 +219,8 @@ public class HtmlExtract {
 	}
 	
 	public void write(){
-		this.reportFileName = g.getOutputFileName();
+		if (data.isGui()) 
+			this.reportFileName = g.getOutputFileName();
 		String content = this.toString();
 		
 		try {
@@ -278,15 +281,15 @@ public class HtmlExtract {
 		for (int i = 0; i < list.length; i++)
 		{
 			switch (list[i]) {
-				case 's': sortBySuccess();
+				case 'o': sortBySuccess();
 					break;
 				case 'n': sortByNode();
 					break;
-				case 't': sortByTestSuite();
+				case 's': sortByTestSuite();
 					break;
-				case 'e': sortByTester();
+				case 'r': sortByTester();
 					break;
-				case 'i': sortByTime();
+				case 't': sortByTime();
 					break;
 				default: 
 					break;

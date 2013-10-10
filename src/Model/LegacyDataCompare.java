@@ -8,16 +8,17 @@ import java.util.Properties;
 public class LegacyDataCompare {
 
 	private ArrayList<LegacyData> legacyList;
-	private Integer length = legacyList.size();
+	private Integer length;
 	
 	public LegacyDataCompare(Data data) {	
-		 ArrayList<LegacyData> legacyList = new ArrayList<LegacyData>();
+
+		 legacyList = new ArrayList<LegacyData>();
 		 Properties prop = new Properties();
 		 
 		 try {
 	           //load a properties file
 			prop.load(new FileInputStream("LegacyResultData.txt"));
-			System.out.println(prop.getProperty(data.getUP()));
+//			System.out.println(prop.getProperty(data.getUP()));
 			
 			String s = prop.getProperty(data.getUP());
 	
@@ -35,10 +36,13 @@ public class LegacyDataCompare {
 		 } catch (IOException ex) {
 	    		ex.printStackTrace();
 		 }
+		 
+		 length = legacyList.size();
+//		 System.out.println(length);
 //			for (LegacyData ld: legacyList){
 //				System.out.println(ld);
 //			}
-			
+
 	}
 
 
@@ -46,9 +50,8 @@ public class LegacyDataCompare {
         
         for (int i = 0; i < length; i++)
         {
-           if (legacyList.get(i).getSuiteName().equals(testName))
-        	   
-                return legacyList.get(i).getSuiteNumber();
+        	if (legacyList.get(i).getSuiteName().equals(testName))
+        	return legacyList.get(i).getSuiteNumber();
         }		
 		
 		return 0;
@@ -74,6 +77,16 @@ public class LegacyDataCompare {
 	 	}		
 			
 		return "Test Suite not found";
+	}
+
+
+	public ArrayList<LegacyData> getLegacyList() {
+		return legacyList;
+	}
+
+
+	public void setLegacyList(ArrayList<LegacyData> legacyList) {
+		this.legacyList = legacyList;
 	}
 	
 //	public getTestNumber

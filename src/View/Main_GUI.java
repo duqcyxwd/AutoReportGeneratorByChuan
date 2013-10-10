@@ -15,7 +15,7 @@ public class Main_GUI {
 	JFrame f = new JFrame("Auto Report Generator by Chuan");;
 	JLabel l = new JLabel("More option can be find in config.properties");
 	JTextArea ta = new JTextArea(40, 130);
-	String[] labels = {"SigNums: ", "Report Begin from:", "Report End at: ", "Date Format"};
+	String[] labels = {"SigNums: ", "Report Begin from:", "Report End at: ", "Date Format", "UP"};
 	ArrayList<JTextField> tfs;
 	JButton run = new JButton("Run");;
 	JButton save = new JButton("Save Result");
@@ -40,6 +40,7 @@ public class Main_GUI {
 		tfs.get(2).setText(d.getDateOfReportEndString());
 		tfs.get(3).setText(d.getTimeformatterString());
 		tfs.get(3).setEditable(false);
+		tfs.get(4).setText(d.getUP());
 		
 		outputTf.setText(e.getReportFileName());
 	}
@@ -52,6 +53,8 @@ public class Main_GUI {
 	
 		// ta.setBackground(Color.white);
 		JScrollPane sp = new JScrollPane(ta);
+		
+//		Redirect message from console to GUI
 		MessageConsole mc = new MessageConsole(ta);
 		mc.redirectOut();
 		mc.redirectErr(Color.RED, null);
@@ -149,6 +152,10 @@ public class Main_GUI {
 		return tfs.get(3).getText();
 	}
 
+	public String getUP() {
+		return tfs.get(4).getText();
+	}
+	
 	public String getOutputFileName() {
 		return outputTf.getText();
 	}

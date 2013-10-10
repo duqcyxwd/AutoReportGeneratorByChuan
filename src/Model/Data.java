@@ -42,9 +42,7 @@ public class Data {
     	try {
                //load a properties file
     		prop.load(new FileInputStream("config.properties"));
-    		
-    		System.out.println(prop.getProperty("suitesList"));
-    		
+    		    		
                //get the property value and print it out
 			isRunAllReport = prop.getProperty("isRunAllReport").matches("true");
 			isExclusiveUnnecessarySuite = prop.getProperty("isExclusiveUnnecessarySuite").matches("true");
@@ -181,6 +179,14 @@ public class Data {
 
 	public void setSortOrder(char[] sortOrder) {
 		this.sortOrder = sortOrder;
+	}
+
+	public String getUp() {
+		return up;
+	}
+
+	public void setUp(String up) {
+		this.up = up;
 	}
 
 }

@@ -19,6 +19,7 @@ public class Main_GUI {
 	ArrayList<JTextField> tfs;
 	JButton run = new JButton("Run");;
 	JButton save = new JButton("Save Result");
+	JButton disPlayAllResult = new JButton("Display Result");
 	JTextField outputTf = new JTextField(tfLength);
 	Dimension a = new Dimension(1200, 900);
 	
@@ -97,6 +98,10 @@ public class Main_GUI {
         JPanel pa = new JPanel();
         pa.add(p);
         pa.add(run);
+        
+        disPlayAllResult.addActionListener(new RunListener());
+        pa.add(disPlayAllResult);
+        
         pa.add(creatOutputPane());
         
         run.addActionListener(new RunListener());
@@ -132,6 +137,8 @@ public class Main_GUI {
 //				newExtract.write();
 			} else if (arg0.getSource().equals(save)){
 				e.write();
+			} else if (arg0.getSource().equals(disPlayAllResult)){
+				ta.append("\n\n\n" + e.toString() + "\n\n");
 			}
 		}
 	}

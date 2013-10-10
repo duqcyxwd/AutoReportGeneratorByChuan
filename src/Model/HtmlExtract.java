@@ -37,7 +37,7 @@ public class HtmlExtract {
 	
 	private Main_GUI g;
 	public HtmlExtract() {
-		reportList = new ArrayList<OneTestReport>();
+		
 		link_base = link_title;
 		data =  readConfig();
 		
@@ -53,7 +53,7 @@ public class HtmlExtract {
 	}
 
 	public void startExtract() {
-
+		reportList = new ArrayList<OneTestReport>();
 		if (data.isGui()) 
 			readDataFromGUI();
 		
@@ -241,7 +241,7 @@ public class HtmlExtract {
 			}
 			bw.close();
  
-			System.out.println("\nReport Done\nResult Can be find at " + file.getPath());
+			System.out.println("\n\nResult Can be find at " + file.getPath());
  
 		} catch (IOException e) {
 			e.printStackTrace();

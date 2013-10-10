@@ -12,31 +12,33 @@ public class LegacyDataCompare {
 	
 	public LegacyDataCompare(Data data) {	
 
-		 legacyList = new ArrayList<LegacyData>();
-		 Properties prop = new Properties();
-		 
-		 try {
-	           //load a properties file
-			prop.load(new FileInputStream("LegacyResultData.txt"));
-//			System.out.println(prop.getProperty(data.getUP()));
-			
-			String s = prop.getProperty(data.getUP());
-	
-	
-	        String ss[] = s.replace(" ", "").replace("}", "").replace("{", "").replace("\"", "").split(",");
+		legacyList = new ArrayList<LegacyData>();
+		Properties prop = new Properties();
 
-			for (int i = 0; i < ss.length/5; i++){
-				Integer suiteNum = Integer.parseInt(ss[5*i]);
-	            String suiteName = ss[5*i + 1];
-	            Integer susNum = Integer.parseInt(ss[5*i + 2]);
-	            Integer failNum = Integer.parseInt(ss[5*i + 3]);
-	            Integer skipNum = Integer.parseInt(ss[5*i + 4]);
-				legacyList.add(new LegacyData(suiteNum, suiteName, susNum, failNum, skipNum));
-	        }
-		 } catch (IOException ex) {
-	    		ex.printStackTrace();
-		 }
-		 
+		try {
+		   //load a properties file
+			prop.load(new FileInputStream("LegacyResultData.txt"));
+		//			System.out.println(prop.getProperty(data.getUP()));
+
+
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}
+
+		String s = prop.getProperty(data.getUP());
+			
+			
+		String ss[] = s.replace(" ", "").replace("}", "").replace("{", "").replace("\"", "").split(",");
+		
+		for (int i = 0; i < ss.length/5; i++){
+			Integer suiteNum = Integer.parseInt(ss[5*i]);
+		    String suiteName = ss[5*i + 1];
+		    Integer susNum = Integer.parseInt(ss[5*i + 2]);
+		    Integer failNum = Integer.parseInt(ss[5*i + 3]);
+		    Integer skipNum = Integer.parseInt(ss[5*i + 4]);
+			legacyList.add(new LegacyData(suiteNum, suiteName, susNum, failNum, skipNum));
+		}
+			
 		 length = legacyList.size();
 //		 System.out.println(length);
 //			for (LegacyData ld: legacyList){

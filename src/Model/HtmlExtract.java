@@ -36,6 +36,7 @@ public class HtmlExtract {
 	private String reportFileName = "Report.txt";
 	
 	private Main_GUI g;
+	LegacyDataCompare ld;
 	public HtmlExtract() {
 		
 		link_base = link_title;
@@ -54,13 +55,18 @@ public class HtmlExtract {
 
 	public void startExtract() {
 		reportList = new ArrayList<OneTestReport>();
+		ld = new LegacyDataCompare(data);
 		if (data.isGui()) 
 			readDataFromGUI();
-		
-		System.out.println("Start Extract info from website...");
 
-		for(String userName: userNames){
-			extract(userName);
+		if (data.getGenerateByHtml()) {
+			System.out.println("Start extract info from local file");
+			extractByHtml(data.getHtm());
+		} else {
+			System.out.println("Start Extract info from website...");
+			for(String userName: userNames){
+				extractBySigname(userName);
+			}
 		}
 //		if (Data.isCleanUpRun){
 		this.cleaUp();
@@ -78,13 +84,15 @@ public class HtmlExtract {
 		this.reportFileName = reportFileName;
 	}
 
-	private void readDataFromGUI() {
+	public void readDataFromGUI() {
+		
 		data.setSignums(g.getSignums());	
 		DateFormat Timeformatter = new SimpleDateFormat(g.getTimeFormat());
 		try {
 			data.setDateOfReportBegin((Date)Timeformatter.parse(g.getBeginTime()));
 			data.setDateOfReportEnd((Date)Timeformatter.parse(g.getEndTime()));	
 			data.setUp(g.getUP());
+			data.setSortOrder(g.getSortOrder().toCharArray());
 		} catch (ParseException e) {
 			e.printStackTrace();
 		} 
@@ -93,9 +101,9 @@ public class HtmlExtract {
 	}
 	
 
-	public void extract(String userName) {
+	public void extractBySigname(String userName) {
+
 		
-		LegacyDataCompare ld = new LegacyDataCompare(data);
 		
 		String reportLink, testName, nodeName, suscess, fails, skips;
 		System.out.println("Extracting Data for " + userName);		
@@ -142,7 +150,41 @@ public class HtmlExtract {
 	    }
 		
 	}
-	
+	public void extractByHtml(String htmlAddress) {
+		String reportLink, testName, nodeName, suscess, fails, skips;
+		System.out.println("Extracting Data for " + htmlAddress);		
+		Document doc = null;
+				
+		File input = new File(htmlAddress);
+		//			doc = Jsoup.parse(input, "UTF-8", "http://gtelogs-lte.lmera.ericsson.se/");
+		doc = Jsoup.parse(htmlAddress);
+
+		
+	    for (Element table2 : doc.select("table[id=SortableTable]")) {
+	        for (Element row : table2.select("tr")) {        	
+	            Elements tds = row.select("td");
+	            if (tds.size() > 8) {
+		            reportLink = link_base + htmlAddress + "/" + tds.get(0).select("a").first().attr("href"); 
+		           
+		            DateFormat formatter = new SimpleDateFormat("EEE MMM dd y HH:mm:ss");
+		            Date date = null;
+		            try {
+						date = (Date)formatter.parse(tds.get(0).text());
+					} catch (ParseException e) {
+						e.printStackTrace();
+					}
+		            
+		            nodeName = tds.get(1).text();
+		            testName = tds.get(4).attr("title");
+		            suscess = tds.get(6).text();
+		            fails = tds.get(7).text();
+		            skips = tds.get(8).text();
+		            reportList.add(new OneTestReport(reportLink, nodeName, testName, suscess, fails, skips, date, "User", ld));
+	            }
+	        }
+	    }
+		
+	}
 	public void cleaUp(){
 		Iterator<OneTestReport> ite = reportList.iterator();
 		ArrayList<OneTestReport> badList = new ArrayList<OneTestReport>();

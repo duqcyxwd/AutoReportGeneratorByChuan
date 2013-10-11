@@ -13,10 +13,10 @@ import Model.*;
 public class Main_GUI {
 	
 	int tfLength = 20;
-	JFrame f = new JFrame("Auto Report Generator by Chuan");;
+	JFrame f = new JFrame("Auto Report Generator by Chuan v2.0");;
 	JTextArea l1 = new JTextArea("More option can be find in config.properties \nLegacy result is load from LegacyResultData.properties");
 	JTextArea ta = new JTextArea(40, 130);
-	String[] labels = {"SigNums: ", "Report Begin from:", "Report End at: ", "Date Format", "UP"};
+	String[] labels = {"SigNums: ", "Report Begin from:", "Report End at: ", "Date Format", "UP", "Sort order"};
 	ArrayList<JTextField> tfs;
 	JButton run = new JButton("Run");;
 	JButton save = new JButton("Save Result");
@@ -43,6 +43,7 @@ public class Main_GUI {
 		tfs.get(3).setText(d.getTimeformatterStringFromProperty());
 		tfs.get(3).setEditable(false);
 		tfs.get(4).setText(d.getUp());
+		tfs.get(5).setText(new String(d.getSortOrder()));
 		
 		outputTf.setText(e.getReportFileName());
 	}
@@ -166,6 +167,8 @@ public class Main_GUI {
 			} else if (arg0.getSource().equals(save)){
 				e.write();
 			} else if (arg0.getSource().equals(disPlayAllResult)){
+				e.readDataFromGUI();
+				e.sort();
 				ta.append("\n\n\n" + e.toString() + "\n\n");
 			}
 		}
@@ -189,6 +192,10 @@ public class Main_GUI {
 
 	public String getUP() {
 		return tfs.get(4).getText();
+	}
+	
+	public String getSortOrder() {
+		return tfs.get(5).getText();
 	}
 	
 	public String getOutputFileName() {

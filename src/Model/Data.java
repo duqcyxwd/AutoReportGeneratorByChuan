@@ -26,6 +26,8 @@ public class Data {
 	private Boolean isIncludeReportSummary;
 	
 	private Boolean isGui;
+	private Boolean generateByHtml;
+	private String htm;
 //	private static Object[][] data;
 	
 	private String[] signums;
@@ -68,8 +70,13 @@ public class Data {
 			this.sortOrder = temp.toCharArray();
 			
 			
-			this.isGui = prop.getProperty("isGui").matches("true");
-			this.up = getUP();
+			isGui = prop.getProperty("isGui").matches("true");
+			up = getUP();
+			
+			isExclusiveUnnecessarySuite = prop.getProperty("isExclusiveUnnecessarySuite").matches("true");
+			
+			generateByHtml = prop.getProperty("generateByHtml").matches("true");
+			htm = prop.getProperty("htm");
 			
     	} catch (IOException ex) {
     		ex.printStackTrace();
@@ -187,6 +194,22 @@ public class Data {
 
 	public void setUp(String up) {
 		this.up = up;
+	}
+
+	public Boolean getGenerateByHtml() {
+		return generateByHtml;
+	}
+
+	public void setGenerateByHtml(Boolean generateByHtml) {
+		this.generateByHtml = generateByHtml;
+	}
+
+	public String getHtm() {
+		return htm;
+	}
+
+	public void setHtm(String htm) {
+		this.htm = htm;
 	}
 
 }

@@ -11,7 +11,7 @@ public class LegacyDataCompare {
 	private Integer length;
 	
 	public LegacyDataCompare(Data data) {	
-
+		
 		legacyList = new ArrayList<LegacyData>();
 		Properties prop = new Properties();
 
@@ -23,7 +23,7 @@ public class LegacyDataCompare {
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}
-
+		
 		String s = prop.getProperty(data.getUp());
 		if (s == null){
 			System.out.println(" =================================================================================================");
@@ -48,13 +48,15 @@ public class LegacyDataCompare {
 		    Integer skipNum = Integer.parseInt(ss[5*i + 4]);
 			legacyList.add(new LegacyData(suiteNum, suiteName, susNum, failNum, skipNum));
 		}
-			
+		 
 		 length = legacyList.size();
 //		 System.out.println(length);
 //			for (LegacyData ld: legacyList){
 //				System.out.println(ld);
 //			}
-
+		 
+//		
+//		 System.out.println("length" + length);
 	}
 
 

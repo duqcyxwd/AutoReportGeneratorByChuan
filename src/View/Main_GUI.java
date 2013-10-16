@@ -2,24 +2,32 @@ package View;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.swing.*;
 import javax.swing.border.*;
-
 import Model.*;
+
+
 
 
 public class Main_GUI {
 	
 	int tfLength = 20;
-	JFrame f = new JFrame("Auto Report Generator by Chuan v2.0");;
+	JFrame f = new JFrame("Auto Report Generator by Chuan v2.0");
 	JTextArea l1 = new JTextArea("More option can be find in config.properties \nLegacy result is load from LegacyResultData.properties");
 	JTextArea ta = new JTextArea(40, 130);
 	String[] labels = {"SigNums: ", "Report Begin from:", "Report End at: ", "Date Format", "UP", "Sort order"};
 	ArrayList<JTextField> tfs;
-	JButton run = new JButton("Run");;
+	JButton run = new JButton("Run");
 	JButton save = new JButton("Save Result");
+	JButton clearConsole = new JButton("Clear Console");
+	JButton disPlayConfigFile = new JButton("Display config file");
 	JButton disPlayAllResult = new JButton("Display Test Suite Result Table ");
 	JTextField outputTf = new JTextField(tfLength);
 	Dimension a = new Dimension(1200, 900);
@@ -114,19 +122,22 @@ public class Main_GUI {
 	private JPanel creatButtonPane(){
         JPanel pa = new JPanel(new SpringLayout());
         
-
-        pa.add(run);
         
         disPlayAllResult.addActionListener(new RunListener());
+        disPlayConfigFile.addActionListener(new RunListener());
+        clearConsole.addActionListener(new RunListener());
+        
+        pa.add(run);
         pa.add(disPlayAllResult);
+        pa.add(disPlayConfigFile);
+        pa.add(clearConsole);
         
         pa.add(creatOutputPane());
-        
         run.addActionListener(new RunListener());
         
         
         SpringUtilities.makeCompactGrid(pa,
-                2, 1, //rows, cols
+                4, 1, //rows, cols
                 6, 6,        //initX, initY
                 6, 6);       //xPad, yPad
         
@@ -170,6 +181,40 @@ public class Main_GUI {
 				e.readDataFromGUI();
 				e.sort();
 				ta.append("\n\n\n" + e.toString() + "\n\n");
+			} else if (arg0.getSource().equals(disPlayConfigFile)) {
+				
+				System.out.println("\n\n===========================================  Config file ===============================================\n\n");
+				BufferedReader br = null;
+				try {
+					br = new BufferedReader(new FileReader(Data.configFile));
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			    try {
+			        StringBuilder sb = new StringBuilder();
+			        String line = br.readLine();
+
+			        while (line != null) {
+			            sb.append(line);
+			            sb.append('\n');
+			            line = br.readLine();
+			        }
+			        ta.append(sb.toString());
+			    }  catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} finally {
+			        try {
+						br.close();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			    }
+			   System.out.println("\n\n=============================================  Config file End  ==============================================\n\n\n");
+			} else if (arg0.getSource().equals(clearConsole)){
+				ta.setText("");
 			}
 		}
 	}

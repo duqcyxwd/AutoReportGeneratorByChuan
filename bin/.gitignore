@@ -15,3 +15,4 @@
 /View
 /Model
 *.txt
+/config.properties

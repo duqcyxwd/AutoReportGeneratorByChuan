@@ -14,6 +14,7 @@ public class Data {
 	//Specify Date of Report 
 	// if set runAllReport to true, do not need to worry about date
 	
+	public static String configFile = "config.properties";
 	private Boolean isRunAllReport;
 	private Date dateOfReportBegin;
 	private Date dateOfReportEnd;
@@ -43,7 +44,7 @@ public class Data {
 		
     	try {
                //load a properties file
-    		prop.load(new FileInputStream("config.properties"));
+    		prop.load(new FileInputStream(configFile));
     		    		
                //get the property value and print it out
 			isRunAllReport = prop.getProperty("isRunAllReport").matches("true");

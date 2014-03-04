@@ -38,11 +38,8 @@ public class HtmlExtract {
 	private Main_GUI g;
 	LegacyDataCompare ld;
 	public HtmlExtract() {
-		
 		link_base = link_title;
 		data =  readConfig();
-		
-		
 	}
 	
 	public Data readConfig(){
